@@ -84,6 +84,23 @@ So this is pretty straightforward, you have to sum the numbers in the numerator 
 $ (95 + 87)/(8 + 5) = 182 / 13 = 14 $
 
 #pagebreak()
+#alignRight[Day 16]
+find the number of integers that satisfy;
+$ 5/y<=-0.3 $
+#soln()
+$ y/5<=-1/0.3 $
+$ y<=-5/0.3 $
+$ y<=-16.67 $
+What is an integer? An integer is a whole number, meaning that it isn't a fraction. 0, -1, 2 are integers. 3.14, 2.713 aren't.
+From this we can already tell that -16.67 isn't the answer we are looking for but rather, the number of whole numbers that satisfy the equation. 
+Take _*-16*_: put it in the original equation and you have; $ -0.31<=-0.3 $ which is essentially equal to the each other. Ergo, -16 satisfies the equation. \
+Take _*-15*_: repeat the same process from above and you have; $ -0.33<=-0.3 $ which is true so -15 satisfies the equation. \
+_Continuing to do this until you get to -1._
+Take _*-1*_: $ -5<=-0.3 $ which is also true. 
+Take _*0*_: $ 0<=-0.3 $ This is false
+From -16 to -1, that is 16 integers so there are just 16 integers that satisfy the original equation.
+
+//#pagebreak()
 #alignRight[Day 17]
 $ x > 0 $
 $ sqrt(21 - x) + sqrt(x + 32) = 9 $
@@ -108,7 +125,7 @@ Using the Wolfram calculator;
 #footnote[At this point, I decided not to _waste_ my time by doing the factorization looking for factors of 476 whose sums/differences resulted in -11 so i pulled up Wolfram's calculator]
 //TODO try to increase the size of the image later if it appears in a new page which would mean that i would have to do preceeding problems.
 #figure(
-  image("day17.png", height:150pt),
+  image("day17.png", height:280pt),
   caption:[A screenshot of the results using Wolfram],
 )
 
