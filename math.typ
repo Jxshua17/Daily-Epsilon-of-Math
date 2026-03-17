@@ -30,6 +30,18 @@ My solutions to the daily maths problems from your Daily Epsilon of Math calende
   [_*Solution*_]
 }
 
+#alignRight[Day 7]
+$ -4/3(x-25)=3/4(x+25) $
+#soln()
+Multiply both sides by 12;
+$ cancel(12) dot -4/cancel(3)(x-25) = cancel(12) dot 3/cancel(4)(x+25) $
+$ 4 dot -4(x-25) = 3 dot 3(x+25) $
+$ -16(x-25) = 9(x+25) $
+$ -16x+400 = 9x+225 $
+$ -16x-9x=225-400 $
+$ -25x=-175 $
+$ x=7 $
+
 #alignRight[Day 9]
 Find the number of digits in; $ 14^22 dot 7^-20 $
 #soln()
@@ -141,3 +153,4 @@ $ "since " && x>0 && "therefore " && x=17. $
 - Day 14.
 - Day 9.
 - Day 17.
+- Day 16. 
