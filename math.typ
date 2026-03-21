@@ -104,10 +104,10 @@ $ y/5<=-1/0.3 $
 $ y<=-5/0.3 $
 $ y<=-16.67 $
 What is an integer? An integer is a whole number, meaning that it isn't a fraction. 0, -1, 2 are integers. 3.14, 2.713 aren't.
-From this we can already tell that -16.67 isn't the answer we are looking for but rather, the number of whole numbers that satisfy the equation. 
+From this we can already tell that -16.67 isn't the answer we are looking for but rather, the number of whole numbers that satisfy the equation. \ 
 Take _*-16*_: put it in the original equation and you have; $ -0.31<=-0.3 $ which is essentially equal to the each other. Ergo, -16 satisfies the equation. \
 Take _*-15*_: repeat the same process from above and you have; $ -0.33<=-0.3 $ which is true so -15 satisfies the equation. \
-_Continuing to do this until you get to -1._
+_Continuing to do this until you get to -1._ \
 Take _*-1*_: $ -5<=-0.3 $ which is also true. 
 Take _*0*_: $ 0<=-0.3 $ This is false
 From -16 to -1, that is 16 integers so there are just 16 integers that satisfy the original equation.
@@ -142,8 +142,55 @@ Using the Wolfram calculator;
 )
 
 $ "Looking at Figure 2, we can see the results are" && x=-28,17 $
-$ "since " && x>0 && "therefore " && x=17. $
+$ "since " && x>0 && "therefore " && x=17. $ 
 
+#pagebreak()
+#alignRight[Day 20]
+$ "The product of two rolls of a six-sided die is greater than 8 with a probability of" && x/36 $
+#soln()
+Well, this is pretty straightforward, I believe. You have a single six-sided die and you roll it twice. With each roll of the dice, there are six possible outcomes so to find the possible products of the outcomes of the two rolls, we can make use of a table(6x6).
+
+//#show table.cell.where(level:8): set fill(red)
+
+#show table.cell: it => {
+  show regex("^\*.*\*$"): it => strong(it.text.slice(9, 36))
+  it
+}
+
+#show table.header: set text(red)
+
+
+#set table(
+  fill: (x, y) =>
+    if x == 0 or y == 0 {
+      green.lighten(40%)
+    },
+  align: right,
+)
+
+\
+
+#set align(center)
+  #table(
+  columns:7,
+  rows:7,
+  align:center,
+  inset:12pt,
+  table.header(
+  [],[1],[2],[3],[4],[5],[6],
+),
+  [1],[1],[2],[3],[4],[5],[6],
+ [2],[2],[4],[6],[8],[*10*],[*12*],
+ [3],[3],[6],[*9*],[*12*],[*15*],[*18*],
+ [4],[4],[8],[*12*],[*16*],[*20*],[*24*],
+ [5],[5],[*10*],[*15*],[*20*],[*25*],[*30*],
+ [6],[6],[*12*],[*18*],[*24*],[*30*],[*36*],
+)
+\
+#set align(left)
+
+$ "Counting those products that are greater than 8. There are 20 of them. So" && x = 20 $ 
+$ #sym.therefore && "the probability of the product of two rolls of a six-sided die being greater than 8 is" && 20/36. $
 
 
 //this for assigning shit to its own page. lol
@@ -153,4 +200,6 @@ $ "since " && x>0 && "therefore " && x=17. $
 - Day 14.
 - Day 9.
 - Day 17.
-- Day 16. 
+- Day 16.
+- Day 7.
+- Day 20.
