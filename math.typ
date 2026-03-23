@@ -193,6 +193,14 @@ $ "Counting those products that are greater than 8. There are 20 of them. So" &&
 $ #sym.therefore && "the probability of the product of two rolls of a six-sided die being greater than 8 is" && 20/36. $
 
 
+#alignRight[Day 22]
+$ +7 dot 10\ -4 dot 8\ +10 dot 4\ -8 dot 7 $
+#soln()
+Yup, you read that problem correctly. This was exactly the problem for the 22#super[nd] of March. This is pretty straightforward. So what we should do is bring out BODMAS
+#footnote[If this is your first time seeing this, allow me to explain the usefulness of Brackets, Of, Division, Multiplication, Addition, Subtraction. So $ a + b dot c + d $ gives you a different result if you add the terms together before multiplying them than if you multiplied terms together before then adding up. So to prevent from this variation in result, we have this in place. So you have to take the operations in this order. Why? I still do not know. I remember asking myself this question when i was teaching kids math during my service year. I should fix up on that.]
+and according to this rule, we should be handling all the multiplications before adding or subtracting. So doing this results in 
+$ &=+70-32+40-56 \ &=110-88 \ &=22 $
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
