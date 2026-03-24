@@ -247,7 +247,36 @@ public class Day23 {
     }
 }
 ```
-When you run this program, the printed statement on the terminal/console is "the result of 23^29 mod 29 is 23". And there it is--our answer--23.
+When you run this program, the printed statement on the terminal/console is "the result of 23^29 mod 29 is 23". And there it is--our answer--23. \ \
+
+#alignRight[Day 24]
+A basketball team made 25% of its 3-point shots and 44% of its 2-point shots to score 40 points from 49 shots. How many 3-point shots were attempted?
+#soln()
+After reading this question hundreds and a page filled with terrible attempts at a solution, i can finally say i have solved it and all i needed was a piss break. I took a piss break, came back and started afresh. Now to the solution. \
+49 shots were made consisting of 3 points shot and 2 point shots.
+Let $ x= && "amount of 3pts shot attempted." \ y= && "amount of 2pts shot attempted." $
+Given this, we can develop the following equation knowing the total shots made which is 49;
+$ x+y=49 \ $
+
+Of the total amount of 3pts shots attempted, only 25% went in and of the total amount of 2pts shots attempted, only 44% went in. The total points scored from the 49 shots is 40 points which would mean that just 25% of the 3 points shots attempted summed together with 44% of the 2 points shots attempted result in a total score of 40. Given this, we can develop the following equation;
+$ 25%(3x)+44%(2y)=40 $
+$ 0.25(3x)+0.44(2y)=40 $
+$ 0.75x+0.44y=40 $
+
+We now have a set of simultaneous equations. 
+$ x+y=49 -> "eqn 1" $
+$ 0.75x+0.44y=40 -> "eqn 2" $
+We will solve for just _x_ since that is what we are concerned with. So making _y_ the subject of formula in eqn 1 and substituting for y in eqn 2.
+$ "From eqn 1, we have" && y=49-x && "and then substituting for y in eqn 2" $
+$ 0.75x+0.88(49-x)=40 $
+$ 0.75x+43.12-0.88x=40 $
+$ 0.75x-0.88x=40-43.12 $
+$ cancel(-, angle:#30deg,)0.13x=cancel(-, angle:#30deg)3.12 $ //i really should have looked at an example in the documentation. lol.
+$ x=3.12/0.13 $
+$ x=24 $
+$ #sym.therefore && "The amount of 3-points shots attempted was 24." $
+
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
