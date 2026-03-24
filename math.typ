@@ -201,6 +201,53 @@ Yup, you read that problem correctly. This was exactly the problem for the 22#su
 and according to this rule, we should be handling all the multiplications before adding or subtracting. So doing this results in 
 $ &=+70-32+40-56 \ &=110-88 \ &=22 $
 
+#alignRight[Day 23]
+$ 23^29 mod 29 $
+#soln()
+This is quite the problem. lol.
+#footnote[Trying to also document my struggles with problems and the approaches that clearly didn't work.]
+I am currently struggling to solve this problem despite the approaches that i have taken.
+#footnote[As i was writing this sentence, i suddenly had an a possible insight for an approach on how to go about solving the problem.] \
+The first thought i had was writing a simple java program that found the value of 23 to the power of 29 using the function pow( ) imported from the Math class and then using the modulus operator to find the final answer but that didn't work because the data type i used for storing these values was 'int' and there is a maximum value that can be stored in int which is $ 2^31 $ and this is clearly smaller than 23 to the 29#super[th] power. I thought of using BigInteger but there is a problem in trying to use the modulus operator with the BigInteger variable. 
+#footnote[If i haven't mentioned this or you are unfamiliar, there is an obvious clue to help you with solving the daily problems and that is the fact that the answer to the problem is that day's date. So going by this, The answer for today should be 23 and nothing else.] \
+I tried using  the modulus function for BigInteger but yet i still am not getting the answer which leaves me with the only other option of trying to breakdown the number into smaller bits that i can then perform computation on but 2 is clearly a prime which sucks. I might also try using the commutative property of modular aithmetic to break it down. I don't know. Lemme keep on trying. \
+Several minutes later, and i have been rescued by the commutative power of modular arithmetic as well as a small java program that i wrote. 
+\
+#figure(
+  image("modulus.png", height:100pt),
+  caption:[A screenshot of an excerpt from the Competitive Programmer's Handbook written by Antti Laaksonen. (_pp 6-7_) ],
+)
+
+So just to refresh my knowledge of modular arithmetic, i consulted the Competitive Programmer's Handbook written by Antti Laaksonen and with that i just knew what to do. First, i had to break them down(ignoring the modulus for now);
+$ 23^29 $
+$ &=23^19+10 \ &=23^19 dot 23^10 \ &=23^9 dot 23^10 dot 23^5 dot 23^5 \ &=23^5 dot 23^4 dot 23^5 dot 23^5 dot 23^5 dot 23^5 $
+Now, bringing in the modulus part of the equation and using our updated knowledge on modular arithmetic from Figure 3.
+$ &=(23^5 dot 23^4 dot 23^5 dot 23^5 dot 23^5 dot 23^5)mod 29 $
+$ &=(23^5 mod 29 dot 23^4  mod 29 dot 23^5  mod 29 dot 23^5  mod 29 dot 23^5  mod 29 dot 23^5 mod 29)mod 29 $
+We can now write a program that looks for the fifth and fourth power of 23 which would then find the modulus; \ \
+```java
+public class Day23 {
+
+    public static void main(String[] args) {
+
+        //finding the fourth and fifth power of 23 which then casts our answer to type int because the type of the result of the pow() method is double.
+        int h = (int) Math.pow(23, 5);
+        int h1 = (int) Math.pow(23, 4);
+
+        //finds the modulus of the results stored in the above variable.
+        int i = h % 29;
+        int i1 = h1 % 29;
+
+        //multiplies the results.
+        int c2 = (int)Math.pow(i, 5) * i1;
+
+        //prints the result of c2 mod 29.
+        System.out.println("the result of 23^29 mod 29 is " + c2%29);
+
+    }
+}
+```
+When you run this program, the printed statement on the terminal/console is "the result of 23^29 mod 29 is 23". And there it is--our answer--23.
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -211,3 +258,5 @@ $ &=+70-32+40-56 \ &=110-88 \ &=22 $
 - Day 16.
 - Day 7.
 - Day 20.
+- Day 22.
+- Day 23.
