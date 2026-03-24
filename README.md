@@ -6,7 +6,8 @@ I used to get the problems back when i was still active on twittter from this [a
 
 This project has two goals;
 1. Writing a _book_ of sorts containing Daily Epsilon probems that i have worked on in the past as well as my solutions to them for the following reasons: 
- - my benefit and this is after reading an [essay](https://blog.evanchen.cc/2015/03/14/writing/) by  Evan Chen. 
+ - my benefit and this is after reading an [essay](https://blog.evanchen.cc/2015/03/14/writing/) by  Evan Chen. It would be nice to have a catalogue of problems i have worked on that i can take a look at years down the line.
+ - This would force me to learn more math. Something i have been saying i want to do but just keep on putting off. I am not satisfied with my mathematical knowledge. 
  - the benefits of my kids as well. 
  > "Dad, these solutions of yours are terrible" \
  > "Yh, i know"
