@@ -21,7 +21,7 @@ My solutions to the daily maths problems from your Daily Epsilon of Math calende
 #set align(left)
 #let alignRight(text) = {
   set align(center)
-  [*#text*]
+  [\ \ *#text*]
 }
 // #set footnote.entry(indent:-10em)
 
@@ -95,7 +95,7 @@ So this is pretty straightforward, you have to sum the numbers in the numerator 
 
 $ (95 + 87)/(8 + 5) = 182 / 13 = 14 $
 
-#pagebreak()
+//#pagebreak()
 #alignRight[Day 16]
 find the number of integers that satisfy;
 $ 5/y<=-0.3 $
@@ -144,7 +144,7 @@ Using the Wolfram calculator;
 $ "Looking at Figure 2, we can see the results are" && x=-28,17 $
 $ "since " && x>0 && "therefore " && x=17. $ 
 
-#pagebreak()
+//#pagebreak()
 #alignRight[Day 20]
 $ "The product of two rolls of a six-sided die is greater than 8 with a probability of" && x/36 $
 #soln()
@@ -275,6 +275,24 @@ $ cancel(-, angle:#30deg,)0.13x=cancel(-, angle:#30deg)3.12 $ //i really should 
 $ x=3.12/0.13 $
 $ x=24 $
 $ #sym.therefore && "The amount of 3-points shots attempted was 24." $
+\ 
+#alignRight[Day 26]
+$ sum_(n=1)^6 tan^2((n pi) / 14) $
+#soln()
+$ sum_(n=1)^6 tan^2((n pi) / 14)
+  &= tan^2(pi/14) +  tan^2((cancel(2)pi)/cancel(14)) + tan^2((3pi)/14) + tan^2((cancel(4)pi)/cancel(14)) + tan^2((5pi)/14) + tan^2((cancel(6)pi)/cancel(14)) \
+  &= tan^2(pi/14) +  tan^2((pi)/7) + tan^2((3pi)/14) + tan^2((2pi)/7) + tan^2((5pi)/14) + tan^2((3pi)/7) $
+
+At this point, i used the calculator of my phone to compute the values and for the first three terms of the equation, i noticed that the results were too low
+that if i were to sum them all up, i wouldn't get the result i wanted as the clue suggests. #footnote[or maybe i didn't write the expression well in the calculator.] So off to Wolfram, I went. \
+  
+  #figure(
+    image("day26.png", height:300pt),
+    caption:[A screenshot of the results using Wolfram.]
+  )
+
+  From the diagram, we can see that the result is 26. \
+$ #sym.therefore sum_(n=1)^6 tan^2((n pi) / 14) = 26 $
 
 
 //this for assigning shit to its own page. lol
@@ -289,3 +307,5 @@ $ #sym.therefore && "The amount of 3-points shots attempted was 24." $
 - Day 20.
 - Day 22.
 - Day 23.
+- Day 24.
+- Day 26.
