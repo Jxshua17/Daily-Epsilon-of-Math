@@ -169,9 +169,9 @@ Well, this is pretty straightforward, I believe. You have a single six-sided die
 )
 
 \
-
-#set align(center)
-  #table(
+#figure(
+//set align(center)
+  table(
   columns:7,
   rows:7,
   align:center,
@@ -185,6 +185,9 @@ Well, this is pretty straightforward, I believe. You have a single six-sided die
  [4],[4],[8],[*12*],[*16*],[*20*],[*24*],
  [5],[5],[*10*],[*15*],[*20*],[*25*],[*30*],
  [6],[6],[*12*],[*18*],[*24*],[*30*],[*36*],
+ 
+),
+caption:[Table showing the products of the results of two rolls of a six-sided die.]
 )
 \
 #set align(left)
