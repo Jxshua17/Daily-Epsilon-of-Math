@@ -295,8 +295,28 @@ that if i were to sum them all up, i wouldn't get the result i wanted as the clu
   )
 
   From the diagram, we can see that the result is 26. \
+
 $ #sym.therefore sum_(n=1)^6 tan^2((n pi) / 14) = 26 $
 
+#alignRight[Day 27]
+#polygon(
+  fill:rgb("#93c7d5"),
+  stroke:black,
+  (20%, 0pt),
+  (60%, 0pt),
+  (80%, 4cm),
+  (0%,  4cm),
+)
+
+#pagebreak()
+#alignRight[Day 31]
+FInd the mode of the number of days in the months of 2026.
+#soln()
+So this is a pretty interesting question. We could start by listing out the different months and the number of days in them or better still, list the days and then the different months with this number alongside their frequency. There are only three possible numbers 28, 30 and 31.
+- 28 -> February(1).
+- 30 -> April, June, September, November(4).
+- 31 -> January, March, May, July, August, October, December(7).
+$ #sym.therefore && "The mode of the number of days in the month of 2026 is 7." $
 
 //this for assigning shit to its own page. lol
 #pagebreak()
