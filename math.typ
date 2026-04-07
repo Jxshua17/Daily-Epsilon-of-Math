@@ -21,7 +21,7 @@ My solutions to the daily maths problems from your Daily Epsilon of Math calende
 #set align(left)
 #let alignRight(text) = {
   set align(center)
-  [\ \ *#text*]
+  [*#text*]
 }
 // #set footnote.entry(indent:-10em)
 
@@ -310,7 +310,7 @@ $ #sym.therefore sum_(n=1)^6 tan^2((n pi) / 14) = 26 $
 
 #pagebreak()
 #alignRight[Day 31]
-FInd the mode of the number of days in the months of 2026.
+Find the mode of the number of days in the months of 2026.
 #soln()
 So this is a pretty interesting question. We could start by listing out the different months and the number of days in them or better still, list the days and then the different months with this number alongside their frequency. There are only three possible numbers 28, 30 and 31.
 - 28 -> February(1).
@@ -318,6 +318,57 @@ So this is a pretty interesting question. We could start by listing out the diff
 - 31 -> January, March, May, July, August, October, December(7).
 $ #sym.therefore && "The mode of the number of days in the month of 2026 is 7." $
 
+
+#pagebreak()
+#alignRight[April]
+#alignRight[Day 2]
+$ z+1/z=sqrt(2) $
+$ u=z^11+z^(-11) $
+$ v=z^7+z^(-7) $
+$ x=-(u dot v) $
+#soln()
+Let the first equation be equation 1, the second equation 2 and the third equation 3. \
+Squaring both sides of equation 1.
+$ (z+1/z)^2 = (sqrt(2))^2 $
+$ z^2+2+1/z^2=2 $
+$ z^2+cancel(2)+1/z^2=cancel(2) $
+$ z^2+1/z^2=0 && "    .....eqn4" $
+
+The next thing to do now would be to square both sides of equation 4.
+$  (z^2+1/z^2)^2=0 $
+$ z^4+2+1/z^4=0 $
+$ z^4+1/z^4=-2 && "    .....eqn5" $
+Now, multiplying equation 2 by equation 1:
+$ (z^2+1/z^2)(z+1/z) = 0 dot sqrt(2) $
+$ z^3+z+1/z+1/z^3=0 $
+$ "from eqn1, we know that" && [z+1/z=sqrt(2)]  && ", so therefore" $
+$ z^3+sqrt(2)+1/z^3=0 $
+$ z^3+1/z^3=-sqrt(2) && "   .......eqn6" $
+
+So now, finding the product of eqn6 and eqn5;
+$ (z^4+1/z^4)(z^3+1/z^3)=-2 dot -sqrt(2) $
+$ (z^4+1/z^4)(z^3+1/z^3)=2sqrt(2) $
+$ z^7+z+1/z+1/z^7=2sqrt(2) $
+$ "Again, from eqn1, we know that" && [z+1/z=sqrt(2)]  && ", so therefore" $
+$ z^7+sqrt(2)+1/z^7=2sqrt(2) $
+$ z^7+1/z^7=2sqrt(2)-sqrt(2) $
+$ z^7+1/z^7=sqrt(2) && "    ......eqn7" $
+$ #sym.therefore && "the value for v is" && sqrt(2)  $
+$ "To find" && u&&", we need to find the product of eqn7 and eqn5;" $
+$ (z^7+1/z^7)(z^4+1/z^4)=-2 dot sqrt(2) $
+$ z^11+z^3+1/z^3+1/z^11=-2sqrt(2) $
+$ "from equation 6, we know that" && [z^3+1/z^3=-sqrt(2)] $
+$ z^11-sqrt(2)+1/z^11=-2sqrt(2) $
+$ z^11+1/z^11=-2sqrt(2)+sqrt(2) $
+$ z^11+1/z^11=-sqrt(2) $
+$ #sym.therefore && "the value for u is" && -sqrt(2)  $
+
+\
+
+$ x=-(u dot v) $
+$ x=-(-sqrt(2) dot sqrt(2)) $
+$ x=sqrt(2) dot sqrt(2) $
+$ #sym.therefore x=2 $
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -332,3 +383,4 @@ $ #sym.therefore && "The mode of the number of days in the month of 2026 is 7." 
 - Day 23.
 - Day 24.
 - Day 26.
+- Day 31.
