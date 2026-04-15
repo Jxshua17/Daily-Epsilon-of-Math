@@ -152,10 +152,6 @@ Well, this is pretty straightforward, I believe. You have a single six-sided die
 
 //#show table.cell.where(level:8): set fill(red)
 
-#show table.cell: it => {
-  show regex("^\*.*\*$"): it => strong(it.text.slice(9, 36))
-  it
-}
 
 #show table.header: set text(red)
 
@@ -369,6 +365,80 @@ $ x=-(u dot v) $
 $ x=-(-sqrt(2) dot sqrt(2)) $
 $ x=sqrt(2) dot sqrt(2) $
 $ #sym.therefore x=2 $
+\
+\
+#alignRight[Day 14]
+Find the greatest number of Mondays that can occur in three consecutive months.
+#soln()
+So for this, you need the three months to have as much days in it that's possibly allowed. The maximum number of days you can have in a month is 31 and from the problem in Day 31 of March, you can observe that you can't have three consecutive months that have 31 days. It's either that there are separated by a month with 28/29 days or 30 days. So the next best option is to have two months with 31 days and a month with 30 days separating them. That's the first consideration for this problem. The next consideration for this problem is to make sure that the first day of the first month is on Monday. 
+#footnote[The first day of the 29/30/31-day month usually ends up having 5 instances of that day so for example, if Monday is the first day of the month, there will be 5 Mondays in that month.]
+
+#show table.header: set text(black)
+
+
+#set table(
+  fill: (x, y) =>
+    if y == 0 {
+      none
+    },
+  align: right,
+  stroke: none,
+
+)
+
+#figure(
+  table(
+  columns:7,
+  rows:5,
+  table.header(
+    [*M*],[*T*],[*W*],[*T*],[*F*],[*S*],[*S*],
+  ),
+  [1],[],[],[],[],[],[],
+  [8],[],[],[],[],[],[],
+  [15],[],[],[],[],[],[],
+  [22],[],[],[],[],[],[],
+  [29],[30],[31],[],[],[],[],
+),
+caption:[Month 1]
+)
+
+
+#figure(
+  table(
+  columns:7,
+  rows:5,
+  table.header(
+    [*M*],[*T*],[*W*],[*T*],[*F*],[*S*],[*S*],
+  ),
+  [],[],[],[1],[2],[3],[4],
+  [5],[],[],[],[],[],[],
+  [12],[],[],[],[],[],[],
+  [19],[],[],[],[],[],[],
+  [26],[27],[28],[29],[30],[],[],
+),
+caption:[Month 2]
+)
+
+#figure(
+  table(
+  columns:7,
+  rows:5,
+  table.header(
+    [*M*],[*T*],[*W*],[*T*],[*F*],[*S*],[*S*],
+  ),
+  [],[],[],[],[],[1],[2],
+  [3],[],[],[],[],[],[],
+  [10],[],[],[],[],[],[],
+  [17],[],[],[],[],[],[],
+  [24],[],[],[],[],[],[],
+  [31]
+),
+caption:[Month 3]
+)
+
+For the Tables 2, 3 and 4 which shows the three different months, we are only concerned with Mondays and then the days of the week which are dates ending the month and leading to the next month hence the sparse nature of the months. \
+Counting all of the Mondays in the above tables gives us a total of _*14 Mondays which is the greatest number of Mondays that can occur in three consecutive months.*_
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
