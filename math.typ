@@ -439,6 +439,23 @@ caption:[Month 3]
 For the Tables 2, 3 and 4 which shows the three different months, we are only concerned with Mondays and then the days of the week which are dates ending the month and leading to the next month hence the sparse nature of the months. \
 Counting all of the Mondays in the above tables gives us a total of _*14 Mondays which is the greatest number of Mondays that can occur in three consecutive months.*_
 
+#alignRight[Day 15]
+How many twin primes are under one hundred?
+#soln()
+So what are twin primes? Twin primes are prime numbers that have a difference of just two. 2 and 3 can't be prime because their difference is just one. The twin primes under 100 are;
+1. 3, 5.
+2. 5, 7.
+3. 11, 13.
+4. 17, 19.
+5. 29, 31.
+6. 41, 43.
+7. 59, 61.
+8. 71, 73.
+
+So in total, there are just 8 twin primes under 100. 
+#footnote[This is pretty weird. Haha. I had mentioned earlier on that the date is usually a clue as to what the answer for that day's problem would be. Well, not in this case. This was the exact opposite. Makes me wonder if what they meant was a thousand and not a hundred.]
+//TODO create a link between the above footnote and the necessary comment.
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
