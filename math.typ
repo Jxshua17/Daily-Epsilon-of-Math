@@ -453,7 +453,7 @@ So what are twin primes? Twin primes are prime numbers that have a difference of
 8. 71, 73.
 
 So in total, there are just 8 twin primes under 100. 
-#footnote[This is pretty weird. Haha. I had mentioned earlier on that the date is usually a clue as to what the answer for that day's problem would be. Well, not in this case. This was the exact opposite. Makes me wonder if what they meant was a thousand and not a hundred.]
+#footnote[This is pretty weird. Haha. I had mentioned earlier on that the date is usually a clue as to what the answer for that day's problem would be. Well, not in this case. This was the exact opposite. Makes me wonder if what they meant was a thousand and not a hundred. \ Future Joshua here: I checked and if you find the twin primes under 1000, it exceeds 15 so it couldn't have been a mistake. I guess my suspicion was wrong all along. Not all the problems have solutions that are exactly the date.]
 //TODO create a link between the above footnote and the necessary comment.
 
 //this for assigning shit to its own page. lol
