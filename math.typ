@@ -451,8 +451,9 @@ caption:[Month 3]
 )
 
 For the Tables 2, 3 and 4 which shows the three different months, we are only concerned with Mondays and then the days of the week which are dates ending the month and leading to the next month hence the sparse nature of the months. \
-Counting all of the Mondays in the above tables gives us a total of _*14 Mondays which is the greatest number of Mondays that can occur in three consecutive months.*_
-
+Counting all of the Mondays in the above tables gives us a total of _*14 Mondays which is the greatest number of Mondays that can occur in three consecutive months*_.
+\
+\
 #alignRight[Day 15]
 How many twin primes are under one hundred?
 #soln()
@@ -466,9 +467,24 @@ So what are twin primes? Twin primes are prime numbers that have a difference of
 7. 59, 61.
 8. 71, 73.
 
-So in total, there are just 8 twin primes under 100. 
+So in total, there are just *8* twin primes under 100. 
 #footnote[This is pretty weird. Haha. I had mentioned earlier on that the date is usually a clue as to what the answer for that day's problem would be. Well, not in this case. This was the exact opposite. Makes me wonder if what they meant was a thousand and not a hundred. \ Future Joshua here: I checked and if you find the twin primes under 1000, it exceeds 15 so it couldn't have been a mistake. I guess my suspicion was wrong all along. Not all the problems have solutions that are exactly the date.]
 //TODO create a link between the above footnote and the necessary comment.
+
+#alignRight[Day 16]
+$ 18sqrt(8) + 8sqrt(18) = 15sqrt(2x) $
+#soln()
+$ 18sqrt(4 dot 2) + 8sqrt(9 dot 2) = 15sqrt(2x) \
+  18 dot 2sqrt(2) + 8 dot 3sqrt(2) = 15sqrt(2x) \
+  36sqrt(2) + 24sqrt(2) = 15sqrt(2x) \
+  60sqrt(2) = 15sqrt(2x) \
+  cancel(60)sqrt(2) = cancel(15)sqrt(2x) \
+  4sqrt(2) = sqrt(2x) \
+  4sqrt(2) = sqrt(2) dot sqrt(x) \
+  4cancel(sqrt(2)) = cancel(sqrt(2)) dot sqrt(x) \
+  sqrt(x) = 4^2 \
+  x = 16
+$
 
 //this for assigning shit to its own page. lol
 #pagebreak()
@@ -485,3 +501,6 @@ So in total, there are just 8 twin primes under 100.
 - Day 24.
 - Day 26.
 - Day 31.
+- Day 2.
+- Day 14.
+- Day 15.
