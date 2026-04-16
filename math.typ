@@ -327,33 +327,46 @@ Let the first equation be equation 1, the second equation 2 and the third equati
 Squaring both sides of equation 1.
 $ (z+1/z)^2 = (sqrt(2))^2 $
 $ z^2+2+1/z^2=2 $
-$ z^2+cancel(2)+1/z^2=cancel(2) $
-$ z^2+1/z^2=0 && "    .....eqn4" $
+$ z^2+cancel(2)+1/z^2=cancel(2) \ $
 
-The next thing to do now would be to square both sides of equation 4.
+#set math.equation(numbering: "(1)")
+#counter(math.equation).update(3)
+$ z^2+1/z^2=0  $ <eqn4>
+
+The next thing to do now would be to square both sides of @eqn4.
+#set math.equation(numbering: none)
 $  (z^2+1/z^2)^2=0 $
 $ z^4+2+1/z^4=0 $
-$ z^4+1/z^4=-2 && "    .....eqn5" $
+#set math.equation(numbering: "(1)")
+#counter(math.equation).update(4)
+$ z^4+1/z^4=-2 $ <eqn5>
 Now, multiplying equation 2 by equation 1:
+#set math.equation(numbering: none)
 $ (z^2+1/z^2)(z+1/z) = 0 dot sqrt(2) $
 $ z^3+z+1/z+1/z^3=0 $
-$ "from eqn1, we know that" && [z+1/z=sqrt(2)]  && ", so therefore" $
+$ "from Equation 1, we know that" && [z+1/z=sqrt(2)]  && ", so therefore" $
 $ z^3+sqrt(2)+1/z^3=0 $
-$ z^3+1/z^3=-sqrt(2) && "   .......eqn6" $
+#set math.equation(numbering: "(1)")
+#counter(math.equation).update(5)
+$ z^3+1/z^3=-sqrt(2) $ <eqn6>
 
-So now, finding the product of eqn6 and eqn5;
+So now, finding the product of @eqn6 and @eqn5;
+#set math.equation(numbering: none)
 $ (z^4+1/z^4)(z^3+1/z^3)=-2 dot -sqrt(2) $
 $ (z^4+1/z^4)(z^3+1/z^3)=2sqrt(2) $
 $ z^7+z+1/z+1/z^7=2sqrt(2) $
-$ "Again, from eqn1, we know that" && [z+1/z=sqrt(2)]  && ", so therefore" $
+$ "Again, from Equation 1, we know that" && [z+1/z=sqrt(2)]  && ", so therefore" $
 $ z^7+sqrt(2)+1/z^7=2sqrt(2) $
 $ z^7+1/z^7=2sqrt(2)-sqrt(2) $
-$ z^7+1/z^7=sqrt(2) && "    ......eqn7" $
+#set math.equation(numbering: ("(1)"))
+#counter(math.equation).update(6)
+$ z^7+1/z^7=sqrt(2) $ <eqn7>
+#set math.equation(numbering: none)
 $ #sym.therefore && "the value for v is" && sqrt(2)  $
-$ "To find" && u&&", we need to find the product of eqn7 and eqn5;" $
+To find $u$, we need to find the product of @eqn7 and @eqn5;
 $ (z^7+1/z^7)(z^4+1/z^4)=-2 dot sqrt(2) $
 $ z^11+z^3+1/z^3+1/z^11=-2sqrt(2) $
-$ "from equation 6, we know that" && [z^3+1/z^3=-sqrt(2)] $
+$ "from Equation 6, we know that" && [z^3+1/z^3=-sqrt(2)] $
 $ z^11-sqrt(2)+1/z^11=-2sqrt(2) $
 $ z^11+1/z^11=-2sqrt(2)+sqrt(2) $
 $ z^11+1/z^11=-sqrt(2) $
@@ -365,6 +378,7 @@ $ x=-(u dot v) $
 $ x=-(-sqrt(2) dot sqrt(2)) $
 $ x=sqrt(2) dot sqrt(2) $
 $ #sym.therefore x=2 $
+\
 \
 \
 #alignRight[Day 14]
