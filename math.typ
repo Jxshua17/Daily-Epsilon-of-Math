@@ -358,7 +358,7 @@ $ z^7+z+1/z+1/z^7=2sqrt(2) $
 $ "Again, from Equation 1, we know that" && [z+1/z=sqrt(2)]  && ", so therefore" $
 $ z^7+sqrt(2)+1/z^7=2sqrt(2) $
 $ z^7+1/z^7=2sqrt(2)-sqrt(2) $
-#set math.equation(numbering: ("(1)"))
+#set math.equation(numbering: "(1)")
 #counter(math.equation).update(6)
 $ z^7+1/z^7=sqrt(2) $ <eqn7>
 #set math.equation(numbering: none)
@@ -486,6 +486,83 @@ $ 18sqrt(4 dot 2) + 8sqrt(9 dot 2) = 15sqrt(2x) \
   x = 16
 $
 
+#let initialTemp = $ t#sub[i] $
+#let finalTemp = $ t#sub[f] $
+#let warmingRate = $ r#sub[w] $
+#let coolingRate = $ r#sub[c] $
+#let cel = $ #sym.degree&&"C" $
+#let fah = $ #sym.degree&&"F" $
+
+#alignRight[Day 20]
+A cup starts at 0$cel$ and warms at 1$cel$ per minute in a room that starts at 88$fah$ and cools at 1$fah$ per minute, both reading the same temperature after x mins.
+#soln()
+Let the temperature that they both read after x mins be z$cel$.
+- Cup.
+  - initial temperature, $initialTemp$ = 0$cel$ \
+  - final temperature, $finalTemp$ = z$cel$ \
+  - warming rate, $warmingRate$ = 1$cel$ /min 
+- Room
+  - initial temperature, $initialTemp$ = 88$fah$ \
+  - final temperature, $finalTemp$ = z$cel$ \
+  - cooling rate, $coolingRate$ = 1$fah$ /min 
+
+First thing to do is to convert the initial temperature
+#footnote[The pendant in you might be thinking that since the room is cooling, shouldn't 88$fah$ be the final temparature of the room and z$cel$ be the initial temperature. I get it but _semantics_. Haha!]
+of the room and the cooling rate from fahrenheit to celsius. 
+
+- Converting the initial temperature of the room. \
+ Let the intial temperature of the room in celsius be $y$,
+ $ (y-0)/(100-0)=(88-32)/(212-32) \
+    y/100=56/180 \
+    y=(56 dot 100)/180 \
+    y=31
+ $
+
+$#sym.therefore$ the initial temperature of the room in celsius is 31$cel$.
+
+- Converting the cooling rate.
+ $ 1cancel(fah) dot (100cel)/(212cancel(fah)) \
+    = 0.47cel/min
+ $
+
+$#sym.therefore$ the cooling rate of the room in celsius is 31$cel$/min.
+
+They both read the same temperature of z$cel$ after x mins which would mean that z would be taken as a constant.
+
+- For the cup, \
+$ warmingRate = (finalTemp - initialTemp) / t \
+  1 = (z - 0)/x \
+  1 = z/x \
+$
+
+//my novel solution for resetting the equation numbering system.
+#set math.equation(numbering: none)
+#set math.equation(numbering: "(1)")
+#counter(math.equation).update(0) //i think this might look sexier with a function. 
+
+$ z=x $ <eqn1>
+#set math.equation(numbering: none)
+- For the room, \
+$ 
+ coolingRate = (initialTemp - finalTemp)/t \
+ 0.47 = (31-z)/x \
+ 0.47x = 31-z \
+$
+#set math.equation(numbering: "(1)")
+#counter(math.equation).update(1)
+$ z=31-0.47x $ <eqn2>
+Equating @eqn1 and @eqn2;
+#set math.equation(numbering: none)
+$ x = 31-0.47x $
+$ x+0.47x=31 $
+$ 1.47x=31 \
+  x=31/1.47 \
+  x=21
+$
+
+$#sym.therefore$ the cup and the room would both read the same temperature after 21 minutes.
+
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -504,3 +581,5 @@ $
 - Day 2.
 - Day 14.
 - Day 15.
+- Day 16.
+- Day 20.
