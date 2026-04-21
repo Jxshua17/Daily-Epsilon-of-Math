@@ -494,7 +494,7 @@ $
 #let fah = $ #sym.degree&&"F" $
 
 #alignRight[Day 20]
-A cup starts at 0$cel$ and warms at 1$cel$ per minute in a room that starts at 88$fah$ and cools at 1$fah$ per minute, both reading the same temperature after x mins.
+A cup starts at 0$cel$ and warms at 1$cel$ per minute in a room that starts at 88$fah$ and cools at 1$fah$ per minute, both reading the same temperature after $x$ mins.
 #soln()
 Let the temperature that they both read after x mins be z$cel$.
 - Cup.
@@ -563,6 +563,47 @@ $
 $#sym.therefore$ the cup and the room would both read the same temperature after 21 minutes.
 
 
+#alignRight[Day 21]
+Find the smallest positive integer $x$ such that $x/672$ is a terminating decimal.
+#soln()
+First, we need to know what a terminating decimal is. A terminating decimal is a decimal that contains a finite number of digits after the decimal point. So we need to find the smallest positive integer $x$ such that $x/672$ is a terminating decimal. For this, i have to bring out the big gun, JAVA. I have to write a program that finds me this number using a while loop.
+#footnote[The source code for the programs in this book can be found on this #link("https://github.com/Jxshua17/Daily-Epsilon-of-Math")[ #underline[*Github repo*.] ]]
+
+```java
+public class AprilDay21 {
+
+    public static void main(String[] args) {
+        int i = 1;
+
+        float x = (float) 1 / 3; //fuck floats.
+        double y = (double) 1 / 3; //yay doubles. lol
+        double y1 = (double) 4 / 672;
+        //it has been a while since i used floats and doubles so i have forgotten how much more accurate one is over the other.
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(y1);
+        //trying to see what the length is to determine at what point the decimal terminates in order to solve this question properly.
+        //The length is 18 meaning y has 16 decimal places so i will be using this in the program i will write.
+        System.out.println(String.valueOf(y).length());
+        //the previous comment about the length being 18 isn't true because y1's length is 20
+        System.out.println(String.valueOf(y1).length());
+
+        int length = 18;
+
+        while (length >= 18) {
+            double z = (double) i / 672;
+            length = String.valueOf(z).length();
+            if (length >= 18) {
+                i++;
+            } else {
+                System.out.println("the smallest possible integer, x, such that x/672 is a terminating decimal is "+i);
+            }
+        }
+    }
+}
+```
+
+$#sym.therefore$ The smallest possible integer $x$ such that $x/672$ is a terminating decimal is 21. That's the number that's you get when you run the above program.
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
