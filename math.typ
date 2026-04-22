@@ -604,6 +604,24 @@ public class AprilDay21 {
 ```
 
 $#sym.therefore$ The smallest possible integer $x$ such that $x/672$ is a terminating decimal is 21. That's the number that's you get when you run the above program.
+
+#alignRight[Day 22]
+Find the number of digits(excluding trailing zeroes) to the right of the decimal point in $ (0.8)^20 dot (0.375)^20 $
+#soln()
+Before diving into trying to find the answer, we need to first understand what trailing zeroes are. Trailing zeroes are sort of 0s that appear after a significant digit in a decimal number. Take for example, a number like 0.003453000, the three zeroes after the second three counting from left to right are considered trailing zeroes. So in this problem, if we happen to 11 zeroes after a significant digit, we won't consider that in the final answer which would be the number of digits to the right of the decimal point in the above _equation_. \ \
+Recall that; $ a^b dot c^b = (a dot c)^b $
+So considering this, we can rewrite 
+$ (0.8)^20 dot (0.375)^20 $ as $ (0.8 dot 0.375)^20 $
+
+Now, evaluating the last expression;
+$ 0.3^20 \
+  =3.486784401 dot 10^-11 \
+  =0.00000000003486784401
+$
+
+There are no trailing zeroes so we can move on to count the number of digits to the right of the decimal point which after counting happens to be 20.
+$#sym.therefore$ The number of digits(excluding trailing zeroes) to the right of the decimal point in *$(0.8)^20 dot (0.375)^20$* is 20.
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
