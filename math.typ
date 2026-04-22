@@ -620,8 +620,14 @@ $ 0.3^20 \
 $
 
 There are no trailing zeroes so we can move on to count the number of digits to the right of the decimal point which after counting happens to be 20.
-$#sym.therefore$ The number of digits(excluding trailing zeroes) to the right of the decimal point in *$(0.8)^20 dot (0.375)^20$* is 20.
-
+$#sym.therefore$ The number of digits(excluding trailing zeroes) to the right of the decimal point in *$(0.8)^20 dot (0.375)^20$* is 20. 
+#footnote[
+  I actually am not losing my mind. I had gotten my answer but didn't feel too sure about it but i proceeded to write my solution despite my uncertainty which was also helped by the fact that the problem for April Day 20 had an answer of 21 and i know my solution was sound and logical. I went on mastodon only to then find in the replies of today's problem similar concerns of mine. I am not mad after all. Figure 5 shows the replies.
+#figure(
+    image("mastodonReplies.png", height:400pt),
+    caption:[A screenshot of some of the replies to the problem of the day.]
+  )
+]
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
