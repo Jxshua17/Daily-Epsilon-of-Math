@@ -648,6 +648,31 @@ $ x = 1/(1-0.96) \
   x = 25
 $
 
+#alignRight[Day 26]
+$ 45% &&"of"&& y &&"is"&& 18. \
+  x &&"is"&& 65% &&"of"&& y.  
+$
+#soln()
+45% of $y$ being 18 gives us the following equation;
+
+$ 45/100 dot y = 18 $
+#set math.equation(numbering: "(1)")
+#counter(math.equation).update(0)
+$  45y = 1800 $ <eqn11>
+$x$ being 65% of $y$ gives us the following equation;
+#set math.equation(numbering: none)
+$ y dot 65/100 = x $
+
+#set math.equation(numbering: "(1)")
+#counter(math.equation).update(1)
+$ y = (100x)/65 $ <eqn22>
+Substituting $(100x)/65$ for y in @eqn11.
+$ 45/cancel(100) dot (cancel(100)x)/65 = 18 \
+  45x = 65 dot 18 \
+  45x = 1170 \
+  x = 1170/45 \
+  x = 26 
+$
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -669,4 +694,5 @@ $
 - Day 16.
 - Day 20.
 - Day 22.
-- day 25.
+- Day 25.
+- Day 26.
