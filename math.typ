@@ -628,6 +628,26 @@ $#sym.therefore$ The number of digits(excluding trailing zeroes) to the right of
     caption:[A screenshot of some of the replies to the problem of the day.]
   )
 ]
+
+#alignRight[Day 25]
+$ y = sum_(i=1)^4 (2i+1)/(i^2(i+1)^2) \
+  x = 1/(1-y)
+$
+#soln()
+$ sum_(i=1)^4 (2i+1)/(i^2(i+1)^2) 
+$
+To get $y$, what we need to do is substitute one for $i$ in the equation and do that for 2, 3 and 4 and then we sum everything up. 
+$ sum_(i=1)^4 (2i+1)/(i^2(i+1)^2) =  (2(1)+1)/((1)^2((1)+1)^2)+(2(2)+1)/((2)^2((2)+1)^2)+(2(3)+1)/((3)^2((3)+1)^2)+(2(4)+1)/((4)^2((4)+1)^2) \
+  = 3/4 + 5/36 + 7/144 + 9/400 \
+  = 0.96 \
+  #sym.therefore y=0.96
+$
+Substituting 0.96 for $y$ in the second equation.
+$ x = 1/(1-0.96) \ 
+  x = 1/0.04 \
+  x = 25
+$
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -648,3 +668,5 @@ $#sym.therefore$ The number of digits(excluding trailing zeroes) to the right of
 - Day 15.
 - Day 16.
 - Day 20.
+- Day 22.
+- day 25.
