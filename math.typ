@@ -30,6 +30,9 @@ My solutions to the daily maths problems from your Daily Epsilon of Math calende
   [_*Solution*_]
 }
 
+
+#let tfore = $ #sym.therefore $
+
 #alignRight[Day 7]
 $ -4/3(x-25)=3/4(x+25) $
 #soln()
@@ -54,9 +57,9 @@ Of course, stupid me didn't read the instructions. I just saw the the figures an
 $ (7 dot 2)^22 dot 7^-20 $ 
 $ (7^22 dot 2^22) dot 7^-20 $
 $ "recall that : " && a^b + a^c = a^(b + c) $
-$ #sym.therefore && (7^20 dot 7^2 dot 2^22) dot 7^-20 $
+$ tfore && (7^20 dot 7^2 dot 2^22) dot 7^-20 $
 $ "recall that : " && (a^-1 = 1/a) $
-$ #sym.therefore && (7^20 dot 7^2 dot 2^22) dot (1/7^20) $
+$ tfore && (7^20 dot 7^2 dot 2^22) dot (1/7^20) $
 $ (cancel(7^20) dot 7^2 dot 2^22) dot (1/cancel(7^20)) $
 our simplification finally brings us here;
 $ &= 7^2 dot 2^22 $
@@ -85,7 +88,7 @@ public class Epsilon {
 }
 ```]
 When you run this in an Integrated Development Environment(IDE) that supports java, the result you get is 9.
-$ #sym.therefore && "the length of the result of " && 7^2 dot 2^22 & " is 9." $
+$ tfore && "the length of the result of " && 7^2 dot 2^22 & " is 9." $
 \
 #alignRight[Day 14]
 $ (95 + 87)/(8 + 5) $
@@ -189,7 +192,7 @@ caption:[Table showing the products of the results of two rolls of a six-sided d
 #set align(left)
 
 $ "Counting those products that are greater than 8. There are 20 of them. So" && x = 20 $ 
-$ #sym.therefore && "the probability of the product of two rolls of a six-sided die being greater than 8 is" && 20/36. $
+$ tfore && "the probability of the product of two rolls of a six-sided die being greater than 8 is" && 20/36. $
 
 
 #alignRight[Day 22]
@@ -273,7 +276,7 @@ $ 0.75x-0.88x=40-43.12 $
 $ cancel(-, angle:#30deg,)0.13x=cancel(-, angle:#30deg)3.12 $ //i really should have looked at an example in the documentation. lol.
 $ x=3.12/0.13 $
 $ x=24 $
-$ #sym.therefore && "The amount of 3-points shots attempted was 24." $
+$ tfore && "The amount of 3-points shots attempted was 24." $
 \ 
 #alignRight[Day 26]
 $ sum_(n=1)^6 tan^2((n pi) / 14) $
@@ -292,7 +295,7 @@ that if i were to sum them all up, i wouldn't get the result i wanted as the clu
 
   From the diagram, we can see that the result is 26. \
 
-$ #sym.therefore sum_(n=1)^6 tan^2((n pi) / 14) = 26 $
+$ tfore sum_(n=1)^6 tan^2((n pi) / 14) = 26 $
 
 #alignRight[Day 27]
 #polygon(
@@ -312,7 +315,7 @@ So this is a pretty interesting question. We could start by listing out the diff
 - 28 -> February(1).
 - 30 -> April, June, September, November(4).
 - 31 -> January, March, May, July, August, October, December(7).
-$ #sym.therefore && "The mode of the number of days in the month of 2026 is 7." $
+$ tfore && "The mode of the number of days in the month of 2026 is 7." $
 
 
 #pagebreak()
@@ -362,7 +365,7 @@ $ z^7+1/z^7=2sqrt(2)-sqrt(2) $
 #counter(math.equation).update(6)
 $ z^7+1/z^7=sqrt(2) $ <eqn7>
 #set math.equation(numbering: none)
-$ #sym.therefore && "the value for v is" && sqrt(2)  $
+$ tfore && "the value for v is" && sqrt(2)  $
 To find $u$, we need to find the product of @eqn7 and @eqn5;
 $ (z^7+1/z^7)(z^4+1/z^4)=-2 dot sqrt(2) $
 $ z^11+z^3+1/z^3+1/z^11=-2sqrt(2) $
@@ -370,14 +373,14 @@ $ "from Equation 6, we know that" && [z^3+1/z^3=-sqrt(2)] $
 $ z^11-sqrt(2)+1/z^11=-2sqrt(2) $
 $ z^11+1/z^11=-2sqrt(2)+sqrt(2) $
 $ z^11+1/z^11=-sqrt(2) $
-$ #sym.therefore && "the value for u is" && -sqrt(2)  $
+$ tfore && "the value for u is" && -sqrt(2)  $
 
 \
 
 $ x=-(u dot v) $
 $ x=-(-sqrt(2) dot sqrt(2)) $
 $ x=sqrt(2) dot sqrt(2) $
-$ #sym.therefore x=2 $
+$ tfore x=2 $
 \
 \
 \
@@ -518,14 +521,14 @@ of the room and the cooling rate from fahrenheit to celsius.
     y=31
  $
 
-$#sym.therefore$ the initial temperature of the room in celsius is 31$cel$.
+$tfore$ the initial temperature of the room in celsius is 31$cel$.
 
 - Converting the cooling rate.
  $ 1cancel(fah) dot (100cel)/(212cancel(fah)) \
     = 0.47cel/min
  $
 
-$#sym.therefore$ the cooling rate of the room in celsius is 31$cel$/min.
+$tfore$ the cooling rate of the room in celsius is 31$cel$/min.
 
 They both read the same temperature of z$cel$ after x mins which would mean that z would be taken as a constant.
 
@@ -560,7 +563,7 @@ $ 1.47x=31 \
   x=21
 $
 
-$#sym.therefore$ the cup and the room would both read the same temperature after 21 minutes.
+$tfore$ the cup and the room would both read the same temperature after 21 minutes.
 
 
 #alignRight[Day 21]
@@ -603,7 +606,7 @@ public class AprilDay21 {
 }
 ```
 
-$#sym.therefore$ The smallest possible integer $x$ such that $x/672$ is a terminating decimal is 21. That's the number that's you get when you run the above program.
+$tfore$ The smallest possible integer $x$ such that $x/672$ is a terminating decimal is 21. That's the number that's you get when you run the above program.
 
 #alignRight[Day 22]
 Find the number of digits(excluding trailing zeroes) to the right of the decimal point in $ (0.8)^20 dot (0.375)^20 $
@@ -640,7 +643,7 @@ To get $y$, what we need to do is substitute one for $i$ in the equation and do 
 $ sum_(i=1)^4 (2i+1)/(i^2(i+1)^2) =  (2(1)+1)/((1)^2((1)+1)^2)+(2(2)+1)/((2)^2((2)+1)^2)+(2(3)+1)/((3)^2((3)+1)^2)+(2(4)+1)/((4)^2((4)+1)^2) \
   = 3/4 + 5/36 + 7/144 + 9/400 \
   = 0.96 \
-  #sym.therefore y=0.96
+  tfore y=0.96
 $
 Substituting 0.96 for $y$ in the second equation.
 $ x = 1/(1-0.96) \ 
@@ -675,10 +678,14 @@ $ 45/cancel(100) dot (cancel(100)x)/65 = 18 \
   x = 26 
 $
 
+#alignRight[Day 27]
+#line(angle:90deg)
+
+
 #alignRight[Day 28]
 Find the smallest sum of three positive integers whose product is 792.
 #soln()
-This shouldn't be too hard. What i could do is divide 792 by 2 which givs me 396 and keep on dividing. So basically trying to find the prime factors of 792. \
+This shouldn't be too hard. What i could do is divide 792 by 2 which gives me 396 and keep on dividing. So basically trying to find the prime factors of 792. \
 $ 792 / 2 = 396 \
   396/2=198 \
   198/2=99 \
@@ -698,7 +705,7 @@ Summing all three numbers gives us a value of 33.
 $ "also can be written as "&& 4 dot 6 dot 33=792 $
 Summing all three numbers gives us a value of 43. \
 So far, the least sum of three positive integers whose product is 792 is 28. 
-$ #sym.therefore && "the smallest sum of three positive integers whose product is 792 is 28." $
+$ tfore && "the smallest sum of three positive integers whose product is 792 is 28." $
 
 
 //this for assigning shit to its own page. lol
