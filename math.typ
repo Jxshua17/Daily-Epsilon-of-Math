@@ -667,12 +667,40 @@ $ y dot 65/100 = x $
 #counter(math.equation).update(1)
 $ y = (100x)/65 $ <eqn22>
 Substituting $(100x)/65$ for y in @eqn11.
+#set math.equation(numbering: none)
 $ 45/cancel(100) dot (cancel(100)x)/65 = 18 \
   45x = 65 dot 18 \
   45x = 1170 \
   x = 1170/45 \
   x = 26 
 $
+
+#alignRight[Day 28]
+Find the smallest sum of three positive integers whose product is 792.
+#soln()
+This shouldn't be too hard. What i could do is divide 792 by 2 which givs me 396 and keep on dividing. So basically trying to find the prime factors of 792. \
+$ 792 / 2 = 396 \
+  396/2=198 \
+  198/2=99 \
+  99/3=33\
+  33/3=11
+$
+You can't divide further than this because obviously, 11 is a prime number so we can stop here. \
+$ #sym.therefore 2 dot 2 dot 2 dot 3 dot 3 dot 11=792 $
+$ "also can be written as "&& 8 dot 9 dot 11=792 $
+Summing all three numbers gives us a value of 28.
+$ "also can be written as "&& 6 dot 11 dot 12=792 $
+Summing all three numbers gives us a value of 29.
+
+$ "also can be written as "&& 4 dot 11 dot 18=792 $
+Summing all three numbers gives us a value of 33.
+
+$ "also can be written as "&& 4 dot 6 dot 33=792 $
+Summing all three numbers gives us a value of 43. \
+So far, the least sum of three positive integers whose product is 792 is 28. 
+$ #sym.therefore && "the smallest sum of three positive integers whose product is 792 is 28." $
+
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -696,3 +724,4 @@ $
 - Day 22.
 - Day 25.
 - Day 26.
+- Day 28.
