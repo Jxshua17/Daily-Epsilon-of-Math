@@ -707,6 +707,45 @@ Summing all three numbers gives us a value of 43. \
 So far, the least sum of three positive integers whose product is 792 is 28. 
 $ tfore && "the smallest sum of three positive integers whose product is 792 is 28." $
 
+#alignRight[Day 30]
+Find the number of four digit palindromes that are divisible by 3. 
+#soln()
+This isn't a hard problem. Time to bring the big man out, talking abut java. I will write a simple program that will start with 1001 because that is the first four digit palindrome, and then loop(until we hit a 5 digit number which is 10000) over some lines of code which will reverse the number and store it in a different variable and then check with an if statement using the condition of if the number is equal to its reverse and if it is also divisible by 3. If this statement is true, a counter will be incremented by 1 and whether or not the condition is met, we will increment the number by 1.
+
+```java
+public class AprilDay30 {
+
+    public static void main(String[] args) {
+        int number = 1001;
+        int counter = 0;
+
+        while (number != 10000) {
+            String x = String.valueOf(number);
+            StringBuilder y = new StringBuilder();
+
+            for (int i = x.length() - 1; i > -1; i--) {
+                y.append(x.charAt(i));
+            }
+
+            int convertedY = Integer.parseInt(String.valueOf(y));
+
+            if ((number == convertedY) && (number % 3 == 0)) {
+                counter++;
+            }
+            number++;
+        }
+
+        System.out.println("the total number of four digit palindromes divisible by 3 is " + counter);
+    }
+}
+```
+After running this program, we'll get an output in th terminal which says that \
+$ "the total number of four digit palindromes divisible by 3 is" && 30. $
+
+We can go a step further and list out all 30 numbers just for fun.
+If you include an ArrayList in our program and add all the valid numbers that meet the if condition, you can then print the list of these 30 numbers which are; \
+[1221, 1551, 1881, 2112, 2442, 2772, 3003, 3333, 3663, 3993, 4224, 4554, 4884, 5115, 5445, 5775, 6006, 6336, 6666, 6996, 7227, 7557, 7887, 8118, 8448, 8778, 9009, 9339, 9669, 9999]
+
 
 //this for assigning shit to its own page. lol
 #pagebreak()
@@ -732,3 +771,4 @@ $ tfore && "the smallest sum of three positive integers whose product is 792 is 
 - Day 25.
 - Day 26.
 - Day 28.
+- Day 30.
