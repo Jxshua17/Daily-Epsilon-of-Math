@@ -49,7 +49,7 @@ $ x=7 $
 Find the number of digits in; $ 14^22 dot 7^-20 $
 #soln()
 #figure(
-  image("18045.png", height:280pt),
+  image("img/18045.png", height:280pt),
   caption:[A screenshot of a toot of mine that i made on mastodon.],
 )
 Of course, stupid me didn't read the instructions. I just saw the the figures and i dived strsight into solving. i got to a point and i wondered to myself that this doesn't make any sense at all. I then checked and saw that i was supposed to find the number of digits in the _equation_.
@@ -140,7 +140,7 @@ Using the Wolfram calculator;
 #footnote[At this point, I decided not to _waste_ my time by doing the factorization looking for factors of 476 whose sums/differences resulted in -11 so i pulled up Wolfram's calculator]
 //TODO try to increase the size of the image later if it appears in a new page which would mean that i would have to do preceeding problems.
 #figure(
-  image("day17.png", height:280pt),
+  image("img/day17.png", height:280pt),
   caption:[A screenshot of the results using Wolfram],
 )
 
@@ -216,7 +216,7 @@ I tried using  the modulus function for BigInteger but yet i still am not gettin
 Several minutes later, and i have been rescued by the commutative power of modular arithmetic as well as a small java program that i wrote. 
 \
 #figure(
-  image("modulus.png", height:100pt),
+  image("img/modulus.png", height:100pt),
   caption:[A screenshot of an excerpt from the Competitive Programmer's Handbook written by Antti Laaksonen. (_pp 6-7_) ],
 )
 
@@ -289,7 +289,7 @@ At this point, i used the calculator of my phone to compute the values and for t
 that if i were to sum them all up, i wouldn't get the result i wanted as the clue suggests. #footnote[or maybe i didn't write the expression well in the calculator.] So off to Wolfram, I went. \
   
   #figure(
-    image("day26.png", height:300pt),
+    image("img/day26.png", height:300pt),
     caption:[A screenshot of the results using Wolfram.]
   )
 
@@ -627,7 +627,7 @@ $#sym.therefore$ The number of digits(excluding trailing zeroes) to the right of
 #footnote[
   I actually am not losing my mind. I had gotten my answer but didn't feel too sure about it but i proceeded to write my solution despite my uncertainty which was also helped by the fact that the problem for April Day 20 had an answer of 21 and i know my solution was sound and logical. I went on mastodon only to then find in the replies of today's problem similar concerns of mine. I am not mad after all. Figure 5 shows the replies.
 #figure(
-    image("mastodonReplies.png", height:400pt),
+    image("img/mastodonReplies.png", height:400pt),
     caption:[A screenshot of some of the replies to the problem of the day.]
   )
 ]
