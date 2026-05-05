@@ -746,6 +746,68 @@ We can go a step further and list out all 30 numbers just for fun.
 If you include an ArrayList in our program and add all the valid numbers that meet the if condition, you can then print the list of these 30 numbers which are; \
 [1221, 1551, 1881, 2112, 2442, 2772, 3003, 3333, 3663, 3993, 4224, 4554, 4884, 5115, 5445, 5775, 6006, 6336, 6666, 6996, 7227, 7557, 7887, 8118, 8448, 8778, 9009, 9339, 9669, 9999]
 
+#pagebreak()
+#alignRight[April]
+#alignRight[Day 5]
+Find the number of values of $ 1<=n<=100 $ for which base-3 representations of both $n$ and $n^2$ do not have the digit 2. 
+#soln()
+This is quite an interesting problem. It is now interesting how i see certain problems and just immediately think to myself that i can use code to solve this because this happens to be one of those problems. This is the case with this class of problems rather than the default which is to look for some way using the mathematical knowledge i have(which isn't a lot, mind you) which was basically my instinct befor learning how to code. \
+I will be writing code for this. The pseudocode
+#footnote[forgive my pseudocode. I plead for forgiveness in advance.]
+is presented below;
+1. go into a for loop starting with the first number which is 1 up until 100
+2. take number, $n$ and square it, $n^2$
+3. convert $n$ and $n^2$ to base 3 and store in variables x and y.
+4. using a function which checks if a particular digit is present in a string of digits;
+  - check if 2 is present in x and store in a boolean variable b1 and,
+  - check if 2 is present in y and store in a boolean variable b2 and,
+5. if b1 or b2 is true, do nothing, else increment counter by 1.
+6. print counter(after the loop ends).
+\
+My java code;
+#show raw: set text(size:7pt)
+```java
+public class May5 {
+
+    //this method checks for if there is a specified number is present in a long string of digits.
+    public static boolean isNumberPresent(int number, char digit){
+        String j = String.valueOf(number);
+        boolean isPresent = false;
+
+        for(int k=0;k<j.length();k++){
+            if (j.charAt(k) == digit){
+                isPresent = true;
+                break;
+            }
+        }
+        return isPresent;
+    }
+
+    public static void main(String[] args) {
+
+        int counter = 0;
+
+        for(int i=1;i<=100;i++){
+            int n2 = i * i; //"i" is n while "n2" is n squared.
+
+            int x = Integer.parseInt(Integer.toString(Integer.parseInt(String.valueOf(i), 10), 3));
+            int y = Integer.parseInt(Integer.toString(Integer.parseInt(String.valueOf(n2), 10), 3));
+
+            boolean b1 = isNumberPresent(x, '2');
+            boolean b2 = isNumberPresent(y, '2');
+
+            if (b1 || b2){
+                System.out.println("...........");
+            } else {
+                counter++;
+            }
+        }
+
+        System.out.println(counter);
+    }
+}
+```
+$tfore$ the number of values of $1<=n<=100$ for which base-3 representations of both $n$ and $n^2$ do not have the digit 2 is 5.
 
 //this for assigning shit to its own page. lol
 #pagebreak()
@@ -772,3 +834,4 @@ If you include an ArrayList in our program and add all the valid numbers that me
 - Day 26.
 - Day 28.
 - Day 30.
+- Day 5.
