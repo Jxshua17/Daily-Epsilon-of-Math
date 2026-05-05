@@ -707,6 +707,25 @@ Summing all three numbers gives us a value of 43. \
 So far, the least sum of three positive integers whose product is 792 is 28. 
 $ tfore && "the smallest sum of three positive integers whose product is 792 is 28." $
 
+#alignRight[Day 29]
+$ sum_(n=0)^840 1/(sqrt(n) + sqrt(n+1)) $
+#soln()
+Unfortunately, i do not have any math tricks up my sleeve for this one and i can't compute the sum for this on paper so i will wield what i know well which is programming. Below is a simple java program that computes this.
+```java
+public class April29 {
+    public static void main(String[] args) {
+
+        double total = 0;
+        for(int n=0;n<=840;n++){
+            double sum = (1/(Math.sqrt(n) + Math.sqrt(n+1)));
+            total += sum;
+        }
+        System.out.println(total);
+    }
+}
+```
+When you run this program, you get 29.00000000000002 but we will remove everything after the decimal point leaving us with an answer of 29. 
+
 #alignRight[Day 30]
 Find the number of four digit palindromes that are divisible by 3. 
 #soln()
