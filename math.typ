@@ -764,7 +764,9 @@ is presented below;
 5. if b1 or b2 is true, do nothing, else increment counter by 1.
 6. print counter(after the loop ends).
 \
-My java code;
+My java
+#footnote[I might include a javascript implementation of this algorithm later.]
+code;
 #show raw: set text(size:7pt)
 ```java
 public class May5 {
@@ -807,6 +809,7 @@ public class May5 {
     }
 }
 ```
+When you run this program, you get an output of 5.
 $tfore$ the number of values of $1<=n<=100$ for which base-3 representations of both $n$ and $n^2$ do not have the digit 2 is 5.
 
 //this for assigning shit to its own page. lol
