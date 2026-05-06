@@ -720,11 +720,11 @@ public class April29 {
             double sum = (1/(Math.sqrt(n) + Math.sqrt(n+1)));
             total += sum;
         }
-        System.out.println(total);
+        System.out.println((int)total);
     }
 }
 ```
-When you run this program, you get 29.00000000000002 but we will remove everything after the decimal point leaving us with an answer of 29. 
+When you run this program, you get 29 which is our answer.
 
 #alignRight[Day 30]
 Find the number of four digit palindromes that are divisible by 3. 
