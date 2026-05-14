@@ -831,6 +831,28 @@ public class May5 {
 When you run this program, you get an output of 5.
 $tfore$ the number of values of $1<=n<=100$ for which base-3 representations of both $n$ and $n^2$ do not have the digit 2 is 5.
 
+#let theta = $ #sym.theta $
+
+#alignRight[Day 14]
+$ tan theta + cot theta = 4 \
+  x = tan^2 theta + cot^2 theta
+$
+#soln()
+The first step to take would be squaring both sides of the first equation.
+$  tan theta + cot theta = 4 \
+   (tan theta + cot theta)^2 = 4^2 \
+   (tan theta + cot theta) (tan theta + cot theta) = 4^2 \
+   tan^2 theta + tan theta cot theta + tan theta cot theta + cot^2 theta = 16 \
+tan^2 theta + 2tan theta cot theta + cot^2 theta = 16 \
+   tan theta = 1/cot theta \
+   tfore tan^2 theta + 2(1/cancel((cot theta))) cancel(cot theta) + cot^2 theta = 16 \
+   tan^2 theta + 2 + cot^2 theta = 16 \
+   tan^2 theta + cot^2 theta = 16-2 \
+tan^2 theta + cot^2 theta = 14 
+$
+From the second equation in the question, we can see it is the exact same as the preceeding identity so 
+$tfore$ $x$ = 14.
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -857,3 +879,4 @@ $tfore$ the number of values of $1<=n<=100$ for which base-3 representations of 
 - Day 28.
 - Day 30.
 - Day 5.
+- Day 14.
