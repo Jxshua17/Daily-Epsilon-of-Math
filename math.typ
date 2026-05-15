@@ -853,6 +853,46 @@ $
 From the second equation in the question, we can see it is the exact same as the preceeding identity so 
 $tfore$ $x$ = 14.
 
+#alignRight[Day 15]
+Two six-sided die rolls sum to a prime number with a probability $x/36$.
+#soln()
+This is pretty straightforward. There is a similar problem that i solved from Day 20 back in March. We can make use of a similar approach from that solution here by drawing out a table.
+
+#show table.header: set text(red)
+
+
+#set table(
+  fill: (x, y) =>
+    if x == 0 or y == 0 {
+      green.lighten(40%)
+    },
+  align: right,
+)
+
+#figure(
+//set align(center)
+  table(
+  columns:7,
+  rows:7,
+  align:center,
+  inset:12pt,
+  table.header(
+  [],[1],[2],[3],[4],[5],[6],
+),
+  [1],[*_2_*],[*_3_*],[4],[*_5_*],[6],[*_7_*],
+ [2],[*_3_*],[4],[*_5_*],[6],[*_7_*],[8],
+ [3],[4],[*_5_*],[6],[*_7_*],[8],[9],
+ [4],[*_5_*],[6],[*_7_*],[8],[9],[10],
+ [5],[6],[*_7_*],[8],[9],[10],[*_11_*],
+ [6],[*_7_*],[8],[9],[10],[*_11_*],[12],
+ 
+),
+caption:[Table showing the sum of the results of two rolls of a six-sided die.]
+)
+Counting the *bolded* _italic_ numbers in the table which are obviously the prime numbers, we get a count of 15. \
+$tfore$ Two six-sided die rolls sum to a prime number with a probability of $15/36$ which can also be reduced to $5/12$.
+
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -880,3 +920,4 @@ $tfore$ $x$ = 14.
 - Day 30.
 - Day 5.
 - Day 14.
+- Day 15.
