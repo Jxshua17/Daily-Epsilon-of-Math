@@ -892,6 +892,21 @@ caption:[Table showing the sum of the results of two rolls of a six-sided die.]
 Counting the *bolded* _italic_ numbers in the table which are obviously the prime numbers, we get a count of 15. \
 $tfore$ Two six-sided die rolls sum to a prime number with a probability of $15/36$ which can also be reduced to $5/12$.
 
+#alignRight[Day 20]
+If Jamie can bike three-quarters of a mile in 135 seconds, find how many miles she would travel in an hour.
+#soln()
+This is a simple _physics_ problem. You basically have to find the speed of Jamie and then using that, you can find out how much distance she would have covered in an hour. 
+$ s = d/t $
+where $s$ is the speed, $d$ is the distance and $t$ is the time.
+using the parameters from the question, we can calculate the speed as follows;
+$ s = 0.75/135 && "miles/s" $
+Now, we can calculate the distance as follows given that one hour in seconds is 3600$s$;
+$ d=s dot t \ 
+  d=0.75/135 dot 3600 \
+$
+$  d=20 && "miles" $
+
+$tfore$ Jamie would cover 20 miles if she travels for one hour at constant speed.
 
 //this for assigning shit to its own page. lol
 #pagebreak()
@@ -921,3 +936,4 @@ $tfore$ Two six-sided die rolls sum to a prime number with a probability of $15/
 - Day 5.
 - Day 14.
 - Day 15.
+- Day 20.
