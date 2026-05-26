@@ -908,6 +908,27 @@ $  d=20 && "miles" $
 
 $tfore$ Jamie would cover 20 miles if she travels for one hour at constant speed.
 
+#alignRight[Day 26]
+$ (4+1/3)/(1/2-1/3) $
+#soln()
+Working first on the numerator and then the denominator.
+$ 4+1/3 \
+  (12+1)/3 \
+  =13/3
+$
+The numerator;
+$ 1/2-1/3 \
+  (3-2)/6 \
+  =1/6
+$
+Bringing the results gotten from the numerator and denominator. 
+$ 13/3 #sym.div 1/6 \
+  13/3 dot 6/1 \
+  13/cancel(3) dot cancel(6)/1 \
+  =13 dot 2 \
+  =26.
+$
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -937,3 +958,4 @@ $tfore$ Jamie would cover 20 miles if she travels for one hour at constant speed
 - Day 14.
 - Day 15.
 - Day 20.
+- Day 26.
