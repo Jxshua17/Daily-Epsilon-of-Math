@@ -940,6 +940,22 @@ $ x+271=300 \
   x=29
 $
 
+#alignRight[Day 31]
+$x$ = the difference between the sum of the even and odd number divisors of 50.
+#soln()
+First, we have to find  divisors of 50 and separate them into the even number and odd number divisor sets. \
+The divisors are 1, 2, 5, 10, 25, 50.\
+The even number divisor set;
+$ e={2, 10, 50} $
+The sum of this set = $2+10+50$ = 62. \
+The odd number divisor set;
+$ o={1,5,25} $
+The sum of this set = $1+5+25$ = 31. \
+So, now finding the difference, $d$, of these sums;
+$ d=62-31 \
+  d=31  
+$
+
 #let dt = $times$
 
 #pagebreak()
@@ -997,3 +1013,4 @@ $ =8 $
 - Day 26.
 - Day 8.
 - Day 4.
+- Day 29(May).
