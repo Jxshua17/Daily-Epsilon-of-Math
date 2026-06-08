@@ -929,6 +929,17 @@ $ 13/3 #sym.div 1/6 \
   =26.
 $
 
+#alignRight[Day 29]
+$ 38+x+71+12+62+88=300 $
+#soln()
+This is the kind of problem you solve with your eyes closed. Haha. Even though, i do so, i still have to write out the solution.
+$ 38+x+71+12+62+88=300 $
+adding everything on the left hand side of the equation and then solving for $x$;
+$ x+271=300 \
+  x=300-271 \
+  x=29
+$
+
 #let dt = $times$
 
 #pagebreak()
