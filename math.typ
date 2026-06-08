@@ -929,6 +929,10 @@ $ 13/3 #sym.div 1/6 \
   =26.
 $
 
+#pagebreak()
+#alignRight[April]
+#alignRight[Day 8]
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
