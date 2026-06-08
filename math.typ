@@ -929,9 +929,30 @@ $ 13/3 #sym.div 1/6 \
   =26.
 $
 
+#let dt = $times$
+
 #pagebreak()
 #alignRight[April]
+#alignRight[Day 4]
+$ 4 dt 0.5 dt 8 dt 2 dt 0.125 $
+#soln()
+This is pretty straightforward, I guess.
+We just multiply throughout but let's make this fun by replacing 0.5 with $1/2$ and 0.125 with $1/8$.
+$ 4 dt 1/2 dt 8 dt 2 dt 1/8 $
+$ 4 dt 1/cancel(2) dt cancel(8) dt cancel(2) dt 1/cancel(8) $
+$ =4 $
+
+\
 #alignRight[Day 8]
+$ sqrt(100) + sqrt(576) - sqrt(100+576) $
+#soln()
+
+$ sqrt(100) + sqrt(576) - sqrt(100+576) $
+$ 10+24-sqrt(676) $
+$ 34-26 $
+$ =8 $
+
+
 
 //this for assigning shit to its own page. lol
 #pagebreak()
@@ -963,3 +984,5 @@ $
 - Day 15.
 - Day 20.
 - Day 26.
+- Day 8.
+- Day 4.
