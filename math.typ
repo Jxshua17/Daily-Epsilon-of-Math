@@ -1008,6 +1008,32 @@ $ x=(s^2(5-s)+r^2(5-r)+t^2(5-t))/(s r t) \
 $
 given that  $r+s+t=5$, we can find the square and cube of this equation;
 
+#alignRight[Day 24]
+When two six-sided dice are rolled, the probability that the sum is not divisible by 3 is $x/36$.
+#soln()
+A similar problem was solved on the 15th of May. We can use the table from that problem's solution and just circle(read _bolden_)the numbers that aren't divisible by 3.
+#figure(
+//set align(center)
+  table(
+  columns:7,
+  rows:7,
+  align:center,
+  inset:12pt,
+  table.header(
+  [],[1],[2],[3],[4],[5],[6],
+),
+  [1],[*_2_*],[3],[*_4_*],[*_5_*],[6],[*_7_*],
+ [2],[3],[*_4_*],[*_5_*],[6],[*_7_*],[*_8_*],
+ [3],[*_4_*],[*_5_*],[6],[*_7_*],[*_8_*],[9],
+ [4],[*_5_*],[6],[*_7_*],[*_8_*],[9],[*_10_*],
+ [5],[6],[*_7_*],[*_8_*],[9],[*_10_*],[*_11_*],
+ [6],[*_7_*],[*_8_*],[9],[*_10_*],[*_11_*],[12],
+ 
+),
+caption:[Table showing the sum of the results of two rolls of a six-sided die.]
+)
+Counting the *bolded* _italic_ numbers in the table which are obviously the numbers that aren't divisible by 3, we get a count of 24. \
+$tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a probability of $24/36$ which can also be reduced to $2/3$.
 
 
 
