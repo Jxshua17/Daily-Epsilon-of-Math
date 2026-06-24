@@ -1008,6 +1008,31 @@ $ x=(s^2(5-s)+r^2(5-r)+t^2(5-t))/(s r t) \
 $
 given that  $r+s+t=5$, we can find the square and cube of this equation;
 
+#alignRight[Day 20]
+Find the number of even factors of 1620.
+#soln()
+Here, we are looking for the total number of factors of 1620 that are even.
+#footnote[if you are wondering what this means, it is simple. A number that is divisible by 2.]
+So we can bring out the big gun--java--and write a simple program that consists of a _for_ loop that ends when it gets to 1620 with an if condition within it that checks if the current number through the loop is divisible by 2 and if $1620 mod & "currentNumber" $ is equal to zero. If the condition is met, the total variable increments by 1 and at the end of the program, the total is printed.
+```java
+public class June20 {
+
+    public static void main(String[] args) {
+        int input = 1620;
+        int total = 0;
+
+        for (int l = 1; l <= input; l++) {
+            if (l % 2 == 0 && input % l == 0) {
+                total++;
+            }
+        }
+        System.out.println(total);
+    }
+}
+```
+When you run the program, you get a total of 20. \
+$tfore$ the number of even factors of 1620 is 20.
+
 #alignRight[Day 22]
 Find the minimum number of balls chosen from 2 red, 3 yellow, 4 green, 5 blue, 6 indigo, and 7 purple balls so that there must be five of the same color.
 #soln()
@@ -1086,3 +1111,4 @@ $tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a
 - Day 17.
 - Day 24.
 - Day 22.
+- Day 20.
