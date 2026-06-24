@@ -979,6 +979,36 @@ $ 10+24-sqrt(676) $
 $ 34-26 $
 $ =8 $
 
+#alignRight[Day 17]
+$ r+s+t=5 $
+$ 1/r + 1/s + 1/t = 4 $
+$ f(u,v) = u/v + v/u $
+$ x=f(r,s)+f(s,t)+f(t,r) $
+#soln()
+Given the above set of equations, we can say the following;
+$ f(r,s)=r/s+s/r \
+  f(s,t)=s/t+t/s \
+  f(t,r)=t/r+r/t
+$
+Substituting these set of equations into $x$;
+$ x=r/s+s/r+s/t+t/s+t/r+r/t \ 
+  x= (r^2t+s^2t+s^2r+t^2r+s t^2+s r^2) / (s r t) \ 
+  x= (s^2t+s^2r+r^2t+r^2s+t^2r+t^2s)/(s r t) \
+  x=(s^2(t+r)+r^2(t+s)+t^2(r+s))/(s r t) \
+$
+going back to the very first equation ($r+s+t=5$);
+$ t+r=5-s \ 
+  t+s=5-r \
+  r+s=5-t
+$
+substituting these terms into $x$;
+$ x=(s^2(5-s)+r^2(5-r)+t^2(5-t))/(s r t) \
+  x=(5s^2-s^3+5r^2-r^3+5t^2-t^3)/(s r t) \
+  x=(5(r^2+s^2+t^2)-(r^3+s^3+t^3))/(s r t) \
+$
+given that  $r+s+t=5$, we can find the square and cube of this equation;
+
+
 
 
 //this for assigning shit to its own page. lol
@@ -1014,3 +1044,4 @@ $ =8 $
 - Day 8.
 - Day 4.
 - Day 29(May).
+- Day 17.
