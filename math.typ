@@ -1008,6 +1008,19 @@ $ x=(s^2(5-s)+r^2(5-r)+t^2(5-t))/(s r t) \
 $
 given that  $r+s+t=5$, we can find the square and cube of this equation;
 
+#alignRight[Day 22]
+Find the minimum number of balls chosen from 2 red, 3 yellow, 4 green, 5 blue, 6 indigo, and 7 purple balls so that there must be five of the same color.
+#soln()
+The first thing to do here can be to add all of the balls that are available to get the total amount of the balls.
+$ "total" = 2+3+4+5+6+7 \
+  "total" = 27
+$
+There are 27 balls with 5, 6, 7 of them being blue, indigo and purple balls respectively. So the aim here is to find the minimum number of balls that can be picked with the condition that there must be five balls of the same color. \
+Let's choose blue 
+#footnote[This was arbitrarily picked. Either of indigo and purple can be picked and you'll arrive at the same answer.]
+to be the color that five of the balls must have. Taking this into consideration, we can remove 2 of the indigo balls leaving just 4 as well as 3 purple balls leaving 4 balls. 2 indigo balls and 3 purple balls gives us a total of 5 balls removed from 27 balls which should then leave behind 22 balls withfive of these balls bieng of the same color and in this case, blue. \
+$tfore$ The minimum number of balls chosen from 2 red, 3 yellow, 4 green, 5 blue, 6 indigo, and 7 purple balls so that there must be five of the same color is 22.
+
 #alignRight[Day 24]
 When two six-sided dice are rolled, the probability that the sum is not divisible by 3 is $x/36$.
 #soln()
@@ -1071,3 +1084,5 @@ $tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a
 - Day 4.
 - Day 29(May).
 - Day 17.
+- Day 24.
+- Day 22.
