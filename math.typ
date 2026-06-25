@@ -1032,6 +1032,46 @@ public class June20 {
 ```
 When you run the program, you get a total of 20. \
 $tfore$ the number of even factors of 1620 is 20.
+\ \
+#let deg = $#sym.degree$
+#let theta = $#sym.theta$
+#alignRight[Day 21]
+#figure(
+  image("img/day21.png", height:200pt),
+  caption:[June 21 problem of the day
+  #footnote[I haven't been adding my solutions for problems that involve diagrams because i have been resistant to the idea of using the images directly from mastodon and have preferred to draw th diagrams using typst but i haven't been able to do that yet so i'll be settling for this version for now until i figure out how to make geometrical diagrams like this and then i'll make a new commit.]
+]
+)
+#soln()
+To find $x$, we'll need to find the angle, $theta$, opposite the side of the triangle of length $sqrt(294)$ units. \
+The sum of the angles in a triangle is 180$deg$ so therefore;
+$ 60deg+75deg+theta = 180deg \
+  135deg + theta = 180deg \
+  theta = 180deg - 135deg \
+  theta = 45deg
+$
+//#let sin = $#math.sine$
+Having found $theta$, we can now go on to find $x$ using sine rule which is;
+$ a/(sin A) = b/(sin B) = c/(sin C) $
+where sides $a$, $b$, $c$ are opposite to the angles $A$, $B$ and $C$ respectively.
+Knowing this and extrapolating from figure 6, we can say that;
+$ x/(sin 60deg) = sqrt(294)/(sin 45deg) \
+  x = (sin 60deg dot sqrt(294))/(sin 45deg)
+$
+Recall that;
+$ sin 60deg = sqrt(3)/2 && "," \
+  sin 45deg = 1/sqrt(2)
+$
+$ tfore x=(sqrt(3)/2 dot sqrt(294))/(1/sqrt(2)) \
+  x=(sqrt(3)/2 dot sqrt(294)) #sym.div (1/sqrt(2)) \
+  x=(sqrt(3)/2 dot sqrt(294)) dot sqrt(2) \
+  x=(sqrt(3) dot sqrt(294) dot sqrt(2)) / 2 \
+  x=sqrt(1764)/2 \
+  x=42/2 \
+  x=21
+$
+
+
 
 #alignRight[Day 22]
 Find the minimum number of balls chosen from 2 red, 3 yellow, 4 green, 5 blue, 6 indigo, and 7 purple balls so that there must be five of the same color.
@@ -1112,3 +1152,4 @@ $tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a
 - Day 24.
 - Day 22.
 - Day 20.
+- Day 21.
