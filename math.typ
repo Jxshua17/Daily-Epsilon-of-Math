@@ -1125,6 +1125,52 @@ $ 23/cancel(4) dt cancel(16)^4/5 + 7/4 dt 23/5 - 3/4 dt 3/5 \
   = 26
 $
 
+#let logx = $ log _x $
+#let log3 = $ log _3 $
+
+#alignRight[Day 27]
+Find the larger solution to
+$ x^(log3 x) = 729x $
+#soln()
+Recall that; 
+$ "If" c = a^b \
+  tfore log _a c = b
+$
+We can rearrange the original equation; 
+$ 729x= x^(log3 x) \ 
+  logx 729x = log3 x \
+  logx 729 + logx x = log3 x \
+  logx 729 + 1 = log3 x 
+$
+We can change the log on the RHS from base 3 to base $x$.
+Recall that;
+$ log _x y = (log y) / (log x) $
+
+$ tfore logx 729 + 1 = (logx x)/(logx 3) \ 
+  logx 729 + 1 = 1/(logx 3) \
+$
+Multiply through by $logx 3$;
+$ logx 729 dot logx 3 + logx 3 = 1 \
+  logx 3^6 dot logx 3 + logx 3 = 1 \
+  6 logx 3 dot logx 3 + logx 3 = 1 \
+  "let" a = logx 3 \
+  tfore 6a dot a + a = 1 \
+  6a^2 + a = 1 \
+  6a^2 + a -1 = 0 \
+  "Solving the quadratic equation:" \
+  6a^2 + 3a - 2a - 1 = 0 \
+  3a(2a+1) -1(2a+1)=0 \
+  (3a - 1)(2a + 1) = 0 \
+  tfore a = 1/3 , -1/2. \ \
+  "Recall that" a = logx 3, \
+  "which can then be rewritten as;" \ x^a = 3 \
+  "substituting the values of" a "into the equation" \
+  tfore x^(1/3) = 3 , x^(-1/2) =3 \
+  x = 3^3, 3^(-2) \
+  x= 27, 1/9. \
+  tfore "The larger solution to the equation is 27."
+$
+
 
 
 //this for assigning shit to its own page. lol
@@ -1166,3 +1212,4 @@ $
 - Day 20.
 - Day 21.
 - Day 26.
+- Day 27.
