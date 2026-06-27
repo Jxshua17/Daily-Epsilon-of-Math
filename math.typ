@@ -766,7 +766,7 @@ If you include an ArrayList in our program and add all the valid numbers that me
 [1221, 1551, 1881, 2112, 2442, 2772, 3003, 3333, 3663, 3993, 4224, 4554, 4884, 5115, 5445, 5775, 6006, 6336, 6666, 6996, 7227, 7557, 7887, 8118, 8448, 8778, 9009, 9339, 9669, 9999]
 
 #pagebreak()
-#alignRight[April]
+#alignRight[May]
 #alignRight[Day 5]
 Find the number of values of $ 1<=n<=100 $ for which base-3 representations of both $n$ and $n^2$ do not have the digit 2. 
 #soln()
@@ -959,7 +959,7 @@ $
 #let dt = $times$
 
 #pagebreak()
-#alignRight[April]
+#alignRight[June]
 #alignRight[Day 4]
 $ 4 dt 0.5 dt 8 dt 2 dt 0.125 $
 #soln()
@@ -1153,3 +1153,4 @@ $tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a
 - Day 22.
 - Day 20.
 - Day 21.
+- Day 26.
