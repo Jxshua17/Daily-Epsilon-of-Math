@@ -21,7 +21,7 @@ My solutions to the daily maths problems from your Daily Epsilon of Math calende
 #set align(left)
 #let alignRight(text) = {
   set align(center)
-  [*#text*]
+  [ \ \ *#text*]
 }
 // #set footnote.entry(indent:-10em)
 
@@ -1113,6 +1113,14 @@ caption:[Table showing the sum of the results of two rolls of a six-sided die.]
 Counting the *bolded* _italic_ numbers in the table which are obviously the numbers that aren't divisible by 3, we get a count of 24. \
 $tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a probability of $24/36$ which can also be reduced to $2/3$.
 
+#alignRight[Day 25]
+#figure(
+  image("img/day25.png", height:200pt),
+  caption:[Problem of the day for June 25]
+)
+#soln()
+
+
 #alignRight[Day 26]
 $ 23/4 dt 16/5 + 7/4 dt 23/5 - 3/4 dt 3/5  $
 #soln()
@@ -1213,3 +1221,4 @@ $
 - Day 21.
 - Day 26.
 - Day 27.
+- Day 25.
