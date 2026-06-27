@@ -1113,6 +1113,18 @@ caption:[Table showing the sum of the results of two rolls of a six-sided die.]
 Counting the *bolded* _italic_ numbers in the table which are obviously the numbers that aren't divisible by 3, we get a count of 24. \
 $tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a probability of $24/36$ which can also be reduced to $2/3$.
 
+#alignRight[Day 26]
+$ 23/4 dt 16/5 + 7/4 dt 23/5 - 3/4 dt 3/5  $
+#soln()
+Using BODMAS, we know to carry out the multiplication first before either adding or subtracting;
+$ 23/cancel(4) dt cancel(16)^4/5 + 7/4 dt 23/5 - 3/4 dt 3/5 \
+  = 368/20 + 161/20 - 9/20 \
+  = (368+161-9)/20 \
+  = (529-9)/20 \
+  = 520/20 \
+  = 26
+$
+
 
 
 //this for assigning shit to its own page. lol
