@@ -1193,6 +1193,24 @@ $ logx 729 dot logx 3 + logx 3 = 1 \
   x= 27, 1/9. \
   tfore "The larger solution to the equation is 27."
 $
+#let log2 = $log _2$
+#alignRight[Day 28]
+$ log2 (81) log3 (128) $
+#soln()
+81 and 128 can be written as follows;
+$ 81 = 3^4 \
+  128=2^7 \
+  tfore log2 3^4 log3 2^7 \
+  =4 log2 3 dot 7 log3 2 \
+$
+Recall that;
+$ log _x y = (log y) / (log x) $
+$ =4 log2 3 dot 7 [ (log2 2) /(log2 3) ] \
+  =4 log2 3 dot 7 [ 1/(log2 3) ] \
+  =4 cancel(log2 3) dot 7 [ 1/cancel((log2 3)) ] \
+  = 4 dt 7 \
+  = 28
+$ 
 
 #alignRight[Day 29]
 $ y-1/y=5 \
@@ -1262,3 +1280,4 @@ $
 - Day 27.
 - Day 25.
 - Day 29.
+- Day 28.
