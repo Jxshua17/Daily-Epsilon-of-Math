@@ -1119,7 +1119,22 @@ $tfore$ Two six-sided die rolls sum to a number that isn't divisible by 3 with a
   caption:[Problem of the day for June 25]
 )
 #soln()
-
+This is a tricky problem. lol.
+$ "let" r=29/3,y=40/3,z=52/3 
+$
+#figure(
+  image("img/day25_1.png", height:200pt),
+  caption:[]
+)
+From figure 8, we can find the perimeter of half the circle which is information that we can then use to find the length of the arc from the point where $z$ and $y$ meet to the other end of $y$, let's call it $l$ which we can then use to find the angle that the arc subtends. \
+$ "The perimeter of a circle, " p=2 pi r, \
+  tfore "the perimeter of a half circle is, " p=pi r, \
+  "We can then use the following ratio to find" l ";" \
+  p/d = l/y , \
+  "where" p "is the perimeter of half a circle," \
+  "and" d "is the diameter of the circle which is" r dt 2 = (29/3) dt 2 = 58/3
+$
+$ (pi r)/(cancel(58/3)) = l/(cancel(29/3)) $
 
 #alignRight[Day 26]
 $ 23/4 dt 16/5 + 7/4 dt 23/5 - 3/4 dt 3/5  $
