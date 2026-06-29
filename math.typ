@@ -1194,7 +1194,31 @@ $ logx 729 dot logx 3 + logx 3 = 1 \
   tfore "The larger solution to the equation is 27."
 $
 
-
+#alignRight[Day 29]
+$ y-1/y=5 \
+  x=(y+1/y)^2
+$
+#soln()
+#let cancely = $cancel(y)/cancel(y)$
+We can start by squaring both sides of the equation;
+$  (y - 1/y)^2 = 5^2 \
+    y^2-cancely-cancely+1/y^2 = 25 \
+    y^2-1-1+1/y^2=25 \
+    y^2-2+1/y^2=25 \
+    y^2+1/y^2 = 25 + 2 \
+    y^2+1/y^2 = 27 \
+    "Now, for" x; \ x=(y+1/y)^2 \
+    x=(y+1/y)(y+1/y) \
+    x=y^2+cancely+cancely+1/y^2 \
+    x=y^2+1+1+1/y^2 \
+    x=y^2+2+1/y^2 \
+    y^2+1/y^2=x-2
+$
+Equating both values for $y^2+1/y^2$ \
+$ x-2=27 \
+  x=27+2 \
+  x=29
+$
 
 //this for assigning shit to its own page. lol
 #pagebreak()
@@ -1237,3 +1261,4 @@ $
 - Day 26.
 - Day 27.
 - Day 25.
+- Day 29.
