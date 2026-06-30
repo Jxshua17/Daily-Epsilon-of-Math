@@ -979,6 +979,42 @@ $ 10+24-sqrt(676) $
 $ 34-26 $
 $ =8 $
 
+#alignRight[Day 15]
+Find the sum of all possible digits A such that the number 23A8 is divisible by 8.
+#soln()
+We could manually do this with a calculator and start with 0 replacing A and then work our way through to 9 while keeping a set of all digits that let 23A8 be divisible by 6 but are we going to get what we want? Yes but is it elegant/beautiful? Not really. Why not write a program for this. 
+
+```java
+public class June15 {
+
+    public static void main(String[] args) {
+        String number = "23A8";
+
+        int sum = 0;
+
+        for (int i = 0; i <= 9; i++) {
+            //You have to turn i into a string so that A in number can be replaced to perform the calculation.
+            String y = String.valueOf(i);
+            //Replacing A with the current number , i, in the loop.
+            String newNumb = number.replace('A', y.charAt(0));
+            //Turning newNumb to an integer because it is currently a string.
+            int no = Integer.parseInt(newNumb);
+
+            //checking if newNumb which is now stored in no, is divisible by 6 and if the condition is true, we add it to the sum variable.
+            if (no % 6 == 0) {
+                sum = sum + i;
+            }
+        }
+
+        System.out.println(
+            "the sum of all possible digits A such that the number 23A8 is divisible by 6 is " + sum
+        );
+    }
+}
+```
+When you run this program, you get a sum of 15 with the following printed; \
+$ "the sum of all possible digits A such that the number 23A8 is divisible by 6 is 15" $
+
 #alignRight[Day 17]
 $ r+s+t=5 $
 $ 1/r + 1/s + 1/t = 4 $
