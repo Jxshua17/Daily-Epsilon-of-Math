@@ -979,6 +979,36 @@ $ 10+24-sqrt(676) $
 $ 34-26 $
 $ =8 $
 
+#alignRight[Day 10]
+$ sqrt(42+10sqrt(17)) + sqrt(42-10sqrt(17)) $
+#soln()
+$ "let's say " \ x = sqrt(42+10sqrt(17)) + sqrt(42-10sqrt(17)) \
+  "Squaring both sides of the equation" \ 
+  x^2 = (sqrt(42+10sqrt(17)) + sqrt(42-10sqrt(17)))^2
+$
+
+$ "let" a=42, b=10sqrt(17)\
+  tfore x^2=(sqrt(a+b) + sqrt(a-b))^2 \
+  "let" m=sqrt(a+b), n=sqrt(a-b) \
+  tfore x^2 = (m+n)^2 \
+  x^2=m^2+2m n + n^2 \
+  "Replacing " m "and" n "with their respective values;" \
+  x^2 = (sqrt(a+b))^2+2(sqrt(a+b))(sqrt(a-b))+(sqrt(a-b))^2 \
+  x^2 = a+b+2sqrt((a+b)(a-b))+a-b \
+  x^2 = a+cancel(b)+2sqrt((a^2-b^2))+a-cancel(b) \
+  x^2 = 2a+2sqrt((a^2-b^2)) \
+  "Replacing " a "and" b "with their respective values;" \
+  x^2 = 2(42) +2sqrt(42^2-(10sqrt(17))^2) \
+  x^2 = 84 + 2sqrt(1764-(10 dt 17)) \
+  x^2 = 84 + 2sqrt(1764-1700) \
+  x^2 = 84 + 2sqrt(64) \
+  x^2 = 84 + 2 dt 8 \
+  x^2 = 84 + 16 \
+  x^2 = 100 \
+  x = sqrt(100) \
+  x = 10
+$
+
 #alignRight[Day 15]
 Find the sum of all possible digits A such that the number 23A8 is divisible by 8.
 #soln()
