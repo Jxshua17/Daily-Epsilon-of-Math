@@ -1304,6 +1304,68 @@ $ x-2=27 \
   x=29
 $
 
+#pagebreak()
+#alignRight[July]
+#alignRight[Day 4]
+How many of  the number from 2 to 50 have exactly 3 factors?
+#soln()
+I am not the most creative mathematician so naturally, i can't think of a creative way for solving this problem. The only way to do this that comes to mind is to go through each number from 2 to 50 and check for the factors of each number and then count the numbers that have exactly 3 factors. This is a lot of work to do by hand so why not write a program that handles this for us. \
+```java
+//that is right. i have to import ArrayList.
+import java.util.*;
+
+public class July4 {
+
+    public static void main(String[] args) {
+        System.out.println(
+            "Setting up the program. all systems are a go for launch."
+        );
+
+        int x = 2;
+        int l = 0; //a variable to keep track of the numbers that have three factors.
+        ArrayList<Integer> arr = new ArrayList<>(); // a list to add all of the numbers that meet our condition.
+        while (x != 51) {
+            int k = 0; //this variable is for keeping track of the ammount of times x is divisble by a number i.e. a factor.
+
+            //a for loop to check if there is any remainder when you divide x by all of the numbers from 1 to x.
+            for (int j = 1; j <= x; j++) {
+                if (x % j == 0) {
+                    k++;
+                }
+            }
+
+            //if k(the factor(s)) is equal to three, then you increment l by one and add x which is the number that meets this condition to the list.
+            if (k == 3) {
+                l++;
+                arr.add(x);
+            }
+
+            //increment x by one to keep the while loop going.
+            x++;
+        }
+
+        System.out.println(
+            "The amount of numbers from 2 to 50 that have exactly 3 factors is " +
+                l
+        );
+        System.out.println(
+            "the set of numbers from 2 to 50 that have exactly 3 factors is " +
+                arr
+        );
+    }
+}
+```
+When you run the program,
+#footnote[I first wrote the pseudocode in my notebook to flesh out the logic before jumping to my IDE #footnote[which is Zed _btw_.] to write the code. My code was sound but i kept on having issues with getting the final answer which is 4. It turned out that my understanding of factors was incomplete so i went to the encyclopedia of mathematics because my internet was giving me issues at the time and i updated my undrstanding of factors with the entry on factors. I thought the factors of a number didn't include 1 and the number itself. \ According to the encyclopedia of mathematics, the factor(s) of a number, $x$, is a number, $y$, that $x$ is divisible by without any remainders including both 1 and $x$. I don't know where, along the line in my mathematical journey, I made this assumption of 1 and $x$ not being factors and what might have caused me to make such an assumption.]
+you get the following output in your terminal; \
+$ "Setting up the program. all systems are a go for launch." \
+  "The amount of numbers from 2 to 50 that have exactly 3 factors is 4" \
+"the set of numbers from 2 to 50 that have exactly 3 factors is [4, 9, 25, 49]" $
+I went an extra step with my program. Instead of just finding the amount of numbers that meet the condition, we could get the numbers that do meet this condition and which--as we can see from terminal output--are 4, 9, 25, 49. \
+_Coincidentally_, the numbers happen to be perfect squares whose square roots are 2, 3, 5, 7. If you look further at this numbers, you can see that they are the first four prime numbers.
+
+$ tfore "The amount of numbers from 2 to 50 that have exactly 3 factors is 4" $
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -1349,3 +1411,4 @@ $
 - Day 28.
 - Day 15.
 - Day 10.
+- Day 4(July).
