@@ -1366,6 +1366,19 @@ _Coincidentally_, the numbers happen to be perfect squares whose square roots ar
 
 $ tfore "The amount of numbers from 2 to 50 that have exactly 3 factors is 4" $
 
+#alignRight[Day 5]
+$ (sqrt(63) + sqrt(28)) / (sqrt(63) - sqrt(28)) $
+#soln()
+This is pretty straightforward. We use the factors of these numbers to reduce the equation;
+$ = (sqrt(7 dt 9) + sqrt(7 dt 4)) / (sqrt(7 dt 9) - sqrt(7 dt 4)) \
+  = (sqrt(7) dt sqrt(9) + sqrt(7) dt sqrt(4)) / (sqrt(7) dt sqrt(9) - sqrt(7) dt sqrt(4)) \
+  = (3sqrt(7) + 2sqrt(7)) / (3sqrt(7) - 2sqrt(7)) \
+  = (5cancel(sqrt(7))) / cancel(sqrt(7)) \
+  = 5
+$
+
+//TODO create some kind od graphic for final answers to equations the way you have the small forward slash at the bottom right of the answer on paper.
+
 //this for assigning shit to its own page. lol
 #pagebreak()
 #alignRight[*The order in which these problems were solved.*
@@ -1412,3 +1425,4 @@ $ tfore "The amount of numbers from 2 to 50 that have exactly 3 factors is 4" $
 - Day 15.
 - Day 10.
 - Day 4(July).
+- Day 5.
