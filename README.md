@@ -15,3 +15,34 @@ This project has two goals;
 Those will be fun conversations to have with my kids that is if they are mathematically inclined. 
 
 2. Learning [Typst](https://typst.app/). I imagine i would be doing a masters in the future. Something with lots of math in it so having this would be nice because i would have had lots of practice with it. This is the future. Forget LaTex. Hehe!  
+
+#### NB
+The typst file(math.typ) containing my solutions might not always reflect the solutions in the pdf document [^1] (math.pdf) found on the repo so if you are interested in going through the up-to-date solutions in a pdf doc format rather than in the typst file, 
+you can; 
+- get the [typst compiler](https://typst.app/open-source/).
+- After getting the compiler, you can then add it to your PATH. 
+- Then go to your terminal and check if it is installed by typing;
+```bash
+typst --version
+```
+- You should get the version of typst you have installed if not, go to step 2.
+- After confirming the version, you can then clone the repo by running;
+```bash
+git clone https://github.com/Jxshua17/Daily-Epsilon-of-Math
+```
+- After cloning, run the following to enter the directory containing the typst file;
+```bash
+cd daily--epsilon-of-math
+```
+- Then run the following to compile the typst file;
+```bash
+typst compile math.typ
+```
+- you can then go on to open the generated pdf document with the up-to-date solutions.
+```bash 
+explorer.exe math.pdf
+```
+
+
+
+[^1]: This is the case because I just write my solutions in and because i am seeing a preview as i type in my solutions, i am confident that everything is fine meaning there is no need to generate the pdf document.
