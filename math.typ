@@ -1394,10 +1394,13 @@ $ 3x+sqrt(x-7) = 5^2 \
   x= (-b pm sqrt(b^2 - 4 a c)) / (2a) \
   a=9,b=-151,c=632 \
   x= ( -(-151) pm sqrt((-151)^2 + (4 dt 9 dt 632)) ) / (2 dt 9) \
-  x= (151 pm sqrt(22801 + 22752)) / 18 \
-  x= (151 pm sqrt(45553)) / 18 \
-  x=151 pm 
-
+  x= (151 pm sqrt(22801 - 22752)) / 18 \ //because of the distraction around me, i failed to realise that i should be finding the difference and not the sum.
+  x= (151 pm sqrt(49)) / 18 \
+  x=(151 pm 7) / 18 \
+  x = 158/18 ,144/18 \
+  x = 79/9, 8 \
+  "We'll go with the whole number;" \
+  tfore x = 8
 $
 #alignRight[Day 9]
 $ 2^(y+1) = 3 \
