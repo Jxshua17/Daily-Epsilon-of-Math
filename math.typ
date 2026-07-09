@@ -1399,7 +1399,20 @@ $ 3x+sqrt(x-7) = 5^2 \
   x=151 pm 
 
 $
-
+#alignRight[Day 9]
+$ 2^(y+1) = 3 \
+  4^(y+1) = x
+$
+#soln()
+Rearranging equation 2;
+$ 4^(y+1) = x \
+  2^(2(y+1)) = x \
+  2^((y+1)2) = x \
+  "Recall from equation 1 that " 2^(y+1) = 3 \
+  tfore 3^2 =x \
+  x = 3^2 \
+  x=9
+$
 
 //TODO create some kind od graphic for final answers to equations the way you have the small forward slash at the bottom right of the answer on paper.
 
@@ -1450,3 +1463,4 @@ $
 - Day 10.
 - Day 4(July).
 - Day 5.
+- Day 9.
