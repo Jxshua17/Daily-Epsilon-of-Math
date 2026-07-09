@@ -1421,8 +1421,7 @@ $
 
 //this for assigning shit to its own page. lol
 #pagebreak()
-#alignRight[*The order in which these problems were solved.*
-]
+#alignRight[*The order in which these problems were solved/finished.*]
 - Day 14.
 - Day 9.
 - Day 17.
@@ -1467,3 +1466,4 @@ $
 - Day 4(July).
 - Day 5.
 - Day 9.
+- Day 8.
