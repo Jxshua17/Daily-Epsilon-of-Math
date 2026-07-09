@@ -1377,6 +1377,30 @@ $ = (sqrt(7 dt 9) + sqrt(7 dt 4)) / (sqrt(7 dt 9) - sqrt(7 dt 4)) \
   = 5
 $
 
+#let pm = $#sym.plus.minus$
+#alignRight[Day 8]
+$ sqrt(3x + sqrt(x-7)) = 5 $
+#soln()
+$ 3x+sqrt(x-7) = 5^2 \
+  3x+sqrt(x-7) = 25 \
+  sqrt(x-7) = 25-3x \
+  x-7=(25-3x)^2 \
+  x-7=(25-3x)(25-3x) \
+  x-7=625-75x-75x+9x^2 \
+  x-7=625-150x+9x^2 \
+  9x^2-150x-x+625+7=0 \
+  9x^2-151x+632=0 \
+  "Factorising the above equation using the quadratic formuala;" \
+  x= (-b pm sqrt(b^2 - 4 a c)) / (2a) \
+  a=9,b=-151,c=632 \
+  x= ( -(-151) pm sqrt((-151)^2 + (4 dt 9 dt 632)) ) / (2 dt 9) \
+  x= (151 pm sqrt(22801 + 22752)) / 18 \
+  x= (151 pm sqrt(45553)) / 18 \
+  x=151 pm 
+
+$
+
+
 //TODO create some kind od graphic for final answers to equations the way you have the small forward slash at the bottom right of the answer on paper.
 
 //this for assigning shit to its own page. lol
