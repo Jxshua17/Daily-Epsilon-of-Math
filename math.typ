@@ -61,8 +61,8 @@ $ tfore && (7^20 dot 7^2 dot 2^22) dot 7^-20 $
 $ "recall that : " && (a^-1 = 1/a) $
 $ tfore && (7^20 dot 7^2 dot 2^22) dot (1/7^20) $
 $ (cancel(7^20) dot 7^2 dot 2^22) dot (1/cancel(7^20)) $
-our simplification finally brings us here;
 $ &= 7^2 dot 2^22 $
+our simplification finally brings us here;
 Now, to find the length of the result, the only way i know how to do this is by writing some code that computes the powers of these integers and then prints the length of the result. My language of choice here is java. Yes, java. python, you say? nah.
 
 Here goes the java code;
@@ -1366,62 +1366,10 @@ _Coincidentally_, the numbers happen to be perfect squares whose square roots ar
 
 $ tfore "The amount of numbers from 2 to 50 that have exactly 3 factors is 4" $
 
-#alignRight[Day 5]
-$ (sqrt(63) + sqrt(28)) / (sqrt(63) - sqrt(28)) $
-#soln()
-This is pretty straightforward. We use the factors of these numbers to reduce the equation;
-$ = (sqrt(7 dt 9) + sqrt(7 dt 4)) / (sqrt(7 dt 9) - sqrt(7 dt 4)) \
-  = (sqrt(7) dt sqrt(9) + sqrt(7) dt sqrt(4)) / (sqrt(7) dt sqrt(9) - sqrt(7) dt sqrt(4)) \
-  = (3sqrt(7) + 2sqrt(7)) / (3sqrt(7) - 2sqrt(7)) \
-  = (5cancel(sqrt(7))) / cancel(sqrt(7)) \
-  = 5
-$
-
-#let pm = $#sym.plus.minus$
-#alignRight[Day 8]
-$ sqrt(3x + sqrt(x-7)) = 5 $
-#soln()
-$ 3x+sqrt(x-7) = 5^2 \
-  3x+sqrt(x-7) = 25 \
-  sqrt(x-7) = 25-3x \
-  x-7=(25-3x)^2 \
-  x-7=(25-3x)(25-3x) \
-  x-7=625-75x-75x+9x^2 \
-  x-7=625-150x+9x^2 \
-  9x^2-150x-x+625+7=0 \
-  9x^2-151x+632=0 \
-  "Factorising the above equation using the quadratic formuala;" \
-  x= (-b pm sqrt(b^2 - 4 a c)) / (2a) \
-  a=9,b=-151,c=632 \
-  x= ( -(-151) pm sqrt((-151)^2 + (4 dt 9 dt 632)) ) / (2 dt 9) \
-  x= (151 pm sqrt(22801 - 22752)) / 18 \ //because of the distraction around me, i failed to realise that i should be finding the difference and not the sum.
-  x= (151 pm sqrt(49)) / 18 \
-  x=(151 pm 7) / 18 \
-  x = 158/18 ,144/18 \
-  x = 79/9, 8 \
-  "We'll go with the whole number;" \
-  tfore x = 8
-$
-#alignRight[Day 9]
-$ 2^(y+1) = 3 \
-  4^(y+1) = x
-$
-#soln()
-Rearranging equation 2;
-$ 4^(y+1) = x \
-  2^(2(y+1)) = x \
-  2^((y+1)2) = x \
-  "Recall from equation 1 that " 2^(y+1) = 3 \
-  tfore 3^2 =x \
-  x = 3^2 \
-  x=9
-$
-
-//TODO create some kind od graphic for final answers to equations the way you have the small forward slash at the bottom right of the answer on paper.
-
 //this for assigning shit to its own page. lol
 #pagebreak()
-#alignRight[*The order in which these problems were solved/finished.*]
+#alignRight[*The order in which these problems were solved.*
+]
 - Day 14.
 - Day 9.
 - Day 17.
@@ -1464,6 +1412,3 @@ $
 - Day 15.
 - Day 10.
 - Day 4(July).
-- Day 5.
-- Day 9.
-- Day 8.
